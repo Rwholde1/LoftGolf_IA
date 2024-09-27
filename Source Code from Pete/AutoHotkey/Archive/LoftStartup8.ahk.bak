@@ -1,0 +1,145 @@
+#Requires AutoHotkey v2.0
+#SingleInstance
+#Warn  ; Enable warnings to assist with detecting common errors.
+;For resolutions 1280x800 Monitor 3 left, 1920x1080 Monitor 1/2 Right
+
+CoordMode "Mouse", "Window"
+SetTitleMatchMode 2
+BlockInput true
+
+{
+
+;Check if View is running and if not open the program
+If WinExist("ahk_exe VIEW.exe")
+     WinActivate "ahk_exe VIEW.exe"
+   else
+   {
+   Run "C:\LOFT\Uneekor\Launcher\UneekorLauncher.exe /run VIEW"
+   WinWait("ahk_exe VIEW.exe")
+   Sleep 10000
+   }
+
+if WinExist("ahk_class HwndWrapper[UneekorLauncher.exe;;bc209bca-850c-47da-b7d9-f366156dce59]")
+      WinMinimize "ahk_class HwndWrapper[UneekorLauncher.exe;;bc209bca-850c-47da-b7d9-f366156dce59]"
+
+;Check if GSPro is running and if not open the program
+If WinExist("ahk_exe gspro.exe")
+      WinActivate "ahk_exe gspro.exe"
+   else
+     {
+     Run "C:\LOFT\GSProV1\GSPLauncher.exe"
+     WinWait("ahk_Class #32770")
+     Loop 3
+     {
+      if WinExist("ahk_Class #32770")
+         {
+         WinActivate
+         SetControlDelay 0
+         ControlSetChecked(0, "Button1", "ahk_Class #32770")
+         SetControlDelay 0
+         ControlChooseString("1280 x 800", "ComboBox1", "ahk_Class #32770")
+         SetControlDelay 0
+         ControlChooseString("Very High", "ComboBox2","ahk_Class #32770")
+         SetControlDelay 0
+         ControlChooseString("Display 1 (Left)", "ComboBox3", "ahk_Class #32770")
+         SetControlDelay 0
+         ControlClick("Play!", "ahk_Class #32770")
+         }
+         else
+            break
+
+          Sleep 500 ;Sleep for 1/2 second before checking again
+      }
+     }
+
+Sleep 6000  ;Sleep for 6 seconds
+
+   {
+   Loop 2  ;Sign into VIEW
+      {
+      if WinExist("ahk_exe VIEW.exe")
+      {
+         WinActivate "ahk_exe VIEW.exe"
+         Click 455, 340  ;Move to and Click top recent user (window)
+         Sleep 200
+         Click 1375, 1025  ;Move to and Click start on View user (window)
+      }
+         else
+            break
+
+      Sleep 500   ;Sleep for 1/2 second before checking again
+      }
+   }
+
+Sleep 6000  ;Sleep for 6 seconds
+
+if WinExist("ahk_class WindowsForms10.Window.8.app.0.13965fa_r7_ad1")
+      WinMinimize "ahk_class WindowsForms10.Window.8.app.0.13965fa_r7_ad1"
+
+   {
+   Loop 2  ;Click ADD
+      {
+      if WinExist("ahk_exe VIEW.exe")
+      {
+         WinActivate "ahk_exe VIEW.exe"
+            Click 1360, 910  ;Move to and Click ADD (window)
+      }
+         else
+            break
+
+;      WinActivate "ahk_exe gspro.exe"
+      Sleep 500   ;Sleep for 1/2 second before checking again
+      }
+   }
+
+Sleep 2000  ;Sleep for 2 seconds
+
+   {
+   Loop 2  ;Click Club
+      {
+      if WinExist("ahk_exe VIEW.exe")
+      {
+         WinActivate "ahk_exe VIEW.exe"
+            Click 317, 380  ;Move to and Click Club (window)
+      }
+         else
+            break
+
+;      WinActivate "ahk_exe gspro.exe"
+      Sleep 500   ;Sleep for 1/2 second before checking again
+      }
+   }
+
+Sleep 500  ;Sleep for 1/2 second
+
+   {
+   Loop 2  ;Click Photo
+      {
+      if WinExist("ahk_exe VIEW.exe")
+      {
+         WinActivate "ahk_exe VIEW.exe"
+            Click 1770,445  ;Move to and Click Photo (window)
+      }
+         else
+            break
+
+;      WinActivate "ahk_exe gspro.exe"
+      Sleep 500   ;Sleep for 1/2 second before checking again
+      }
+   }
+
+Sleep 1000  ;Sleep for 1 second
+
+   MsgBox "
+      (
+      Be sure to log in and create a new session in
+      Uneekor VIEW if it does not log in automatically.
+
+      DO NOT CLOSE: the "Uneekor Connect" window
+         - or GSPro will not work.
+      )", "LOFT Golf Studios - REMINDERS", "iconi T120"
+   }
+BlockInput false
+
+ExitApp
+

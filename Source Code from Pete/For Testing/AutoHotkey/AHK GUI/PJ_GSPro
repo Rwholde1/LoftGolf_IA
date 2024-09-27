@@ -1,0 +1,30 @@
+#Requires AutoHotkey v2.0
+#SingleInstance
+#Warn  ; Enable warnings to assist with detecting common errors.
+
+{
+BlockInput true
+	;Check if GSPro is running and if not open the program
+If WinExist("ahk_exe gspro.exe")
+      WinActivate "ahk_exe gspro.exe"
+else
+     {
+     Run "C:\LOFT\GSProV1\GSPLauncher.exe"
+     WinWait("ahk_exe gspro.exe")
+          {
+          if WinExist("ahk_exe gspro.exe")
+               WinActivate
+               SetControlDelay 0
+               ControlSetChecked(0, "Button1", "ahk_exe gspro.exe")
+               SetControlDelay 0
+               ControlChooseString("19200 x 1080", "ComboBox1", "ahk_exe gspro.exe")
+               SetControlDelay 0
+               ControlChooseString("GSPro Lite", "ComboBox2","ahk_exe gspro.exe")
+               SetControlDelay 0
+               ControlChooseString("Display 2 (Left)", "ComboBox3", "ahk_exe gspro.exe")
+               SetControlDelay 0
+               ControlClick("Play!", "ahk_exe gspro.exe")
+          }
+	Sleep 60000
+BlockInput false
+ExitApp

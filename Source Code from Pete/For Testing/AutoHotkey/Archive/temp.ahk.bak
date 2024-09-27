@@ -1,0 +1,33 @@
+#Requires AutoHotkey v2.0
+#SingleInstance
+#Warn  ; Enable warnings to assist with detecting common errors.
+
+;DllCall("SetThreadDpiAwarenessContext", "ptr", -3, "ptr")
+;MouseMove 2120, 320 ;Move to and Click start on View user (screen)
+
+;DllCall("SetCursorPos", "int", 2000, "int", 334)  ; The first number is the X-coordinate and the second is the Y (relative to the screen).
+;	Click
+;
+;try
+;{
+;    MonitorGet 2, &Left, &Top, &Right, &Bottom
+;    MsgBox "Left: " Left " -- Top: " Top " -- Right: " Right " -- Bottom: " Bottom
+;}
+;catch
+;    MsgBox "Monitor 2 doesn't exist or an error occurred."
+
+ ;DllCall("SetCursorPos", "int", 3050, "int", 1000)  ;Move to and Click start on View user (screen)
+ ;SendInput Click
+
+; Pass an Integer.
+WinActivate Integer(VarContainingID)
+WinShow A_ScriptHwnd
+WinWaitNotActive WinExist("A")
+
+; Pass an Object with a HWND property.
+WinActivate {Hwnd: VarContainingID}
+WinWaitClose myGuiObject
+
+; Use the ahk_id prefix.
+WinActivate "ahk_id " VarContainingID
+

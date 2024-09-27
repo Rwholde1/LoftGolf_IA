@@ -1,0 +1,6 @@
+#Requires AutoHotkey v2.0
+#SingleInstance
+#Warn  ; Enable warnings to assist with detecting common errors.
+
+    DllCall("SetCursorPos", "int", 1703, "int", 174)  ;Check box for Session #1 (screen)
+        Click

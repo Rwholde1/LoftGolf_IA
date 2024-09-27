@@ -1,0 +1,11 @@
+#Requires AutoHotkey v2.0
+#SingleInstance
+#Warn  ; Enable warnings to assist with detecting common errors.
+
+{
+	BlockInput true
+	Run '"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe" "C:\LOFT\AutoHotkey\LoftCloseIntermediate_Silent_DelSessions.ahk"'
+	Sleep 10000
+	BlockInput false
+	ExitApp
+}

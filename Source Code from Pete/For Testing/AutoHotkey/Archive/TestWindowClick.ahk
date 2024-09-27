@@ -1,0 +1,15 @@
+#Requires AutoHotkey v2.0
+#SingleInstance
+#Warn  ; Enable warnings to assist with detecting common errors.
+;For resolutions 1280x800 Monitor 3 left, 1920x1080 Monitor 1/2 Right
+
+CoordMode "Mouse", "Window"
+SetTitleMatchMode 2
+BlockInput true
+
+;PostMessage 0x0112, 0xF020,,, WinTitle, WinText ; 0x0112 = WM_SYSCOMMAND, 0xF020 = SC_MINIMIZE
+
+;WinActivate "ahk_exe GSPconnect.exe"
+;MsgBox "The active window's class is " WinGetClass("A")
+
+WinMinimize "ahk_class WindowsForms10.Window.8.app.0.13965fa_r7_ad1"

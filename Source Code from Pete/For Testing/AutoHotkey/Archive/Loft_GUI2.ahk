@@ -1,0 +1,15 @@
+file := "C:\LOFT\Video\Loft Getting Started.mp4"
+if Errorlevel
+   ExitApp()
+
+myGui := Gui()
+myGui.OnEvent("Close", GuiClose)
+myGui.Opt("+LastFound")
+ogcActiveXWmp := myGui.Add("ActiveX", "w800 h600 vWmp", "WMPLayer.OCX")
+Wmp := ogcActiveXWmp.Value
+Wmp.Url := file
+myGui.Title := "Wmp in GUI"
+myGui.Show()
+return
+
+GuiClose(*)
