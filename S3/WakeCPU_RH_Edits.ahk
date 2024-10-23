@@ -9,8 +9,8 @@ keystrokeWake(){
 }
 
 mouseWake(){
-	MouseMove, x+1, y+1
-	MouseMove, x-1, y-1
+	MouseMove 10, 10, 100, 'R'
+	MouseMove -10, -10, 100, 'R'
 }
 
 commandWake(){
