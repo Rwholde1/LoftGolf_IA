@@ -1,0 +1,16 @@
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\LoftGolfOverlayUI.exe
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\LoftGolfOverlayUI.deps.json
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\LoftGolfOverlayUI.runtimeconfig.json
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\LoftGolfOverlayUI.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\LoftGolfOverlayUI.pdb
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.Form1.resources
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.csproj.GenerateResource.cache
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.AssemblyInfo.cs
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\refint\LoftGolfOverlayUI.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.pdb
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.genruntimeconfig.cache
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\ref\LoftGolfOverlayUI.dll
