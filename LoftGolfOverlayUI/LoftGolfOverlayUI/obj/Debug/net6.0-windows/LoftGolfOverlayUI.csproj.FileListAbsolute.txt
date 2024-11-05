@@ -14,3 +14,4 @@ C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Deb
 C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.pdb
 C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.genruntimeconfig.cache
 C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\ref\LoftGolfOverlayUI.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.Properties.Resources.resources
