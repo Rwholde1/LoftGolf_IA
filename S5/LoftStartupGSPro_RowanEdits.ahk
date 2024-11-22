@@ -12,12 +12,13 @@ SetTitleMatchMode 2
 BlockInput true
 
 {
-
+MsgBox "Hello!"
 ;Check if GSPro is running and if not open the program
 If WinExist("ahk_exe gspro.exe")
       WinActivate "ahk_exe gspro.exe"
    else
      {
+     MsgBox "I'm Still Here!"
      Run "C:\LOFT\GSProV1\GSPLauncher.exe"
      MsgBox "Waiting for a Window!"
      WinWait("GSPro Configuration")
