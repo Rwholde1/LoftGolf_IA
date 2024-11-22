@@ -58,7 +58,7 @@ BuildVideo(*)
 
 	ogcActiveXWmp := videoPlayer.Add("ActiveX", "w" VideoWidth " h" VideoHeight " vWmp", "WMPLayer.OCX")
 	Wmp := ogcActiveXWmp.Value
-	Wmp.Url := ;REPLACE THIS WITH NEW VIDEO URL
+	Wmp.Url := "C:\Users\Loft\Documents\Videos\TestClip.mp4"
 
 	videoPlayer.Show()
 	videoPlayer.Maximize()
