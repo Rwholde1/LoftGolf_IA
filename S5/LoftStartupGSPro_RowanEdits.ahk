@@ -18,10 +18,8 @@ If WinExist("ahk_exe gspro.exe")
       WinActivate "ahk_exe gspro.exe"
    else
      {
-     try
-           Run "C:\LOFT\GSProV1\GSPLauncher.exe"
-     catch
-           MsgBox "Uh Oh!"
+     Run "C:\LOFT\GSProV1\GSPLauncher.exe"
+     /*
      MsgBox "Waiting for a Window!"
      WinWait("GSPro Configuration")
      MsgBox "Window Found!"
@@ -47,7 +45,7 @@ If WinExist("ahk_exe gspro.exe")
                break
 
              Sleep 500 ;Sleep for 1/2 second before checking again
-         }
+         }*/
       }
 	  
 BuildVideo
