@@ -13,8 +13,6 @@ BlockInput true
 
 {
 
-BuildVideo
-
 ;Check if GSPro is running and if not open the program
 If WinExist("ahk_exe gspro.exe")
       WinActivate "ahk_exe gspro.exe"
@@ -45,7 +43,7 @@ If WinExist("ahk_exe gspro.exe")
          }
       }
 	  
-
+BuildVideo
 
 BuildVideo(*)
 {
