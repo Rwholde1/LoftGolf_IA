@@ -3,6 +3,10 @@
 #Warn  ; Enable warnings to assist with detecting common errors.
 ;For resolutions 1280x800 Monitor 3 left, 1920x1080 Monitor 1/2 Right
 
+Wsize := SysGet(16)
+Hsize := SysGet(17)
+DimensionsText := Wsize " / " Hsize
+
 CoordMode "Mouse", "Window"
 SetTitleMatchMode 2
 BlockInput true
