@@ -63,7 +63,7 @@ BuildVideo(*)
 	videoPlayer.Show()
 	videoPlayer.Maximize()
 
-	Sleep 60000 ;Milliseconds close to the video length (30000 - 60000)
+	Sleep 32000 ;Milliseconds close to the video length (30000 - 60000)
 	videoPlayer.Destroy()
 }
 
