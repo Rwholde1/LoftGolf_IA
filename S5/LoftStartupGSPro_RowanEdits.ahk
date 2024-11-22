@@ -45,7 +45,8 @@ If WinExist("ahk_exe gspro.exe")
                break
 
              Sleep 500 ;Sleep for 1/2 second before checking again
-         }*/
+         }
+*/
       }
 	  
 BuildVideo
