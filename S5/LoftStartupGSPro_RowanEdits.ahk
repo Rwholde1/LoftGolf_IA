@@ -19,22 +19,22 @@ If WinExist("ahk_exe gspro.exe")
    else
      {
      Run "C:\LOFT\GSProV1\GSPLauncher.exe"
-     WinWait("ahk_Class #32770")
+     WinWait("ahk_class #32770")
      Loop 3
         {
-         if WinExist("ahk_Class #32770")
+         if WinExist("ahk_class #32770")
             {
             WinActivate
             SetControlDelay 0
-            ControlSetChecked(0, "Button1", "ahk_Class #32770")
+            ControlSetChecked(0, "Button1", "ahk_class #32770")
             SetControlDelay 0
-            ControlChooseString("1280 x 800", "ComboBox1", "ahk_Class #32770")
+            ControlChooseString("1280 x 800", "ComboBox1", "ahk_class #32770")
             SetControlDelay 0
-            ControlChooseString("Very High", "ComboBox2","ahk_Class #32770")
+            ControlChooseString("Very High", "ComboBox2","ahk_class #32770")
             SetControlDelay 0
-            ControlChooseString("Display 1 (Left)", "ComboBox3", "ahk_Class #32770")
+            ControlChooseString("Display 1 (Left)", "ComboBox3", "ahk_class #32770")
             SetControlDelay 0
-            ControlClick("Play!", "ahk_Class #32770")
+            ControlClick("Play!", "ahk_class #32770")
             }
             else
                break
