@@ -55,6 +55,7 @@
             button1.Text = "Home";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             button1.MouseEnter += Pull_up_UI;
             button1.MouseLeave += Pull_down_UI;
             // 
@@ -208,6 +209,7 @@
             // 
             AutoScaleDimensions = new SizeF(144F, 144F);
             AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = SystemColors.Window;
             ClientSize = new Size(1322, 211);
             ControlBox = false;
             Controls.Add(UI_Clock);

@@ -48,5 +48,14 @@ namespace LoftGolfOverlayUI
             // Update the label with the current system time
             UI_Clock.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+
+            form2.Show();
+
+            this.Hide();
+        }
     }
 }
