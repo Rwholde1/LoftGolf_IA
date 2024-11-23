@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.ApplicationServices;
+
 namespace LoftGolfOverlayUI
 {
     internal static class Program
@@ -14,16 +16,23 @@ namespace LoftGolfOverlayUI
             Application.Run(new Form1());
             /* 
              * TO DO:
-             *      -ADD AN ARROW TO THE TOP PORTION OF OVERLAY TO INDICATE THE MENU CAN SLIDE UP
-             *      -OnMouseEnter() INTO OVERLAY
+             *     O -ADD AN ARROW TO THE TOP PORTION OF OVERLAY TO INDICATE THE MENU CAN SLIDE UP
+             *          -- ADD ICONS FOR ALL BUTTONS AS WELL
+             *          --- DONE !!!
+             *     O - ON STARTUP SET POSITION OF OVERLAY
+             *          -- CHANGE TRANSFORM OF THE FORM TO SIT IN THE MIDDLE BOTTOM OF THE SCREEN
+             *          --- DONE !!! *see form1.cs form1 constructor
+             *     O -OnMouseEnter() INTO OVERLAY
              *          -- INCREASE FORM OPACITY TO 100%
              *          -- CHANGE TRANSFORM OF THE FORM TO SLIDE UP
-             *      -OnMouseExit() FROM OVERLAY
+             *     O -OnMouseExit() FROM OVERLAY
              *          -- DECREASE FORM OPACITY TO 80%
              *          -- CHANGE TRANSFORM OF THE FORM TO SLIDE DOWN
-             *      -KEEP FORM ON SCREEN ABOVE EVERYTHING
-             *      -PROGRAM BUTTONS
+             *     O -KEEP FORM ON SCREEN ABOVE EVERYTHING
+             *     X -PROGRAM BUTTONS
              */
         }
+
+        
     }
 }
