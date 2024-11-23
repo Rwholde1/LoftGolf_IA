@@ -20,7 +20,7 @@ If WinExist("ahk_exe gspro.exe")
      {
      Run "C:\LOFT\GSProV1\GSPLauncher.exe"
      MsgBox "Waiting for a Window!"
-     WinWait("GSPro Configuration")
+     WinWait("ahk_class #32770")
      MsgBox "Window Found!"
      Loop 3
         {
