@@ -19,16 +19,16 @@ If WinExist("ahk_exe gspro.exe")
    else
      {
      Run "C:\LOFT\GSProV1\GSPLauncher.exe"
-     MsgBox "Waiting for a Window!"
+     ;MsgBox "Waiting for a Window!"
      WinWait("ahk_class #32770")
-     MsgBox "Window Found!"
+     ;MsgBox "Window Found!"
      Loop 3
         {
          if WinExist("ahk_class #32770")
             {
-            MsgBox "The Window Exists!"
+            ;MsgBox "The Window Exists!"
             WinActivate
-            MsgBox "The Window is Active!"
+            ;MsgBox "The Window is Active!"
             SetControlDelay 0
             ControlSetChecked(0, "Button1", "ahk_class #32770")
             SetControlDelay 0
