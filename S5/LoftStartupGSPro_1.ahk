@@ -31,7 +31,7 @@ If WinExist("ahk_exe gspro.exe")
             SetControlDelay 0
             ControlChooseString("Very High", "ComboBox2","GSPro Configuration")
             SetControlDelay 0
-            ControlChooseString("Display 1 (Right)", "ComboBox3", "GSPro Configuration")
+            ControlChooseString("Display 1 (Left)", "ComboBox3", "GSPro Configuration")
             SetControlDelay 0
             ControlClick("Play!", "GSPro Configuration")
             }
