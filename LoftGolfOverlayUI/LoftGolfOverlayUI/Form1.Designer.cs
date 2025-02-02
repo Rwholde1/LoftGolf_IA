@@ -29,104 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             UI_Clock = new Label();
+            label7 = new Label();
+            label3 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ImageAlign = ContentAlignment.MiddleRight;
-            button1.Location = new Point(12, 72);
-            button1.Name = "button1";
-            button1.Size = new Size(238, 127);
-            button1.TabIndex = 0;
-            button1.Text = "Home";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            button1.MouseEnter += Pull_up_UI;
-            button1.MouseLeave += Pull_down_UI;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ImageAlign = ContentAlignment.MiddleRight;
-            button2.Location = new Point(256, 72);
-            button2.Name = "button2";
-            button2.Size = new Size(238, 127);
-            button2.TabIndex = 1;
-            button2.Text = "Golf";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
-            button2.MouseEnter += Pull_up_UI;
-            button2.MouseLeave += Pull_down_UI;
-            // 
-            // button3
-            // 
-            button3.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.ImageAlign = ContentAlignment.MiddleRight;
-            button3.Location = new Point(500, 72);
-            button3.Name = "button3";
-            button3.Size = new Size(238, 127);
-            button3.TabIndex = 2;
-            button3.Text = "Karaoke";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
-            button3.MouseEnter += Pull_up_UI;
-            button3.MouseLeave += Pull_down_UI;
-            // 
-            // button4
-            // 
-            button4.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.ImageAlign = ContentAlignment.MiddleRight;
-            button4.Location = new Point(744, 72);
-            button4.Name = "button4";
-            button4.Size = new Size(238, 127);
-            button4.TabIndex = 3;
-            button4.Text = "Movie";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = true;
-            button4.MouseEnter += Pull_up_UI;
-            button4.MouseLeave += Pull_down_UI;
-            // 
-            // button5
-            // 
-            button5.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            button5.ImageAlign = ContentAlignment.MiddleRight;
-            button5.Location = new Point(988, 72);
-            button5.Name = "button5";
-            button5.Size = new Size(238, 127);
-            button5.TabIndex = 4;
-            button5.Text = "Meeting";
-            button5.TextAlign = ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = true;
-            button5.MouseEnter += Pull_up_UI;
-            button5.MouseLeave += Pull_down_UI;
-            // 
-            // button6
-            // 
-            button6.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            button6.ImageAlign = ContentAlignment.MiddleRight;
-            button6.Location = new Point(1232, 72);
-            button6.Name = "button6";
-            button6.Size = new Size(78, 127);
-            button6.TabIndex = 5;
-            button6.Text = "?";
-            button6.UseVisualStyleBackColor = true;
-            button6.MouseEnter += Pull_up_UI;
-            button6.MouseLeave += Pull_down_UI;
             // 
             // label1
             // 
@@ -141,57 +57,48 @@
             // 
             // label2
             // 
-            label2.BackColor = Color.Transparent;
+            label2.BackColor = SystemColors.ButtonFace;
             label2.Image = (Image)resources.GetObject("label2.Image");
-            label2.Location = new Point(161, 108);
+            label2.Location = new Point(163, 108);
             label2.Name = "label2";
             label2.Size = new Size(52, 59);
-            label2.TabIndex = 7;
-            label2.MouseEnter += Pull_up_UI;
-            label2.MouseLeave += Pull_down_UI;
-            // 
-            // label3
-            // 
-            label3.BackColor = Color.Transparent;
-            label3.Image = (Image)resources.GetObject("label3.Image");
-            label3.Location = new Point(370, 99);
-            label3.Name = "label3";
-            label3.Size = new Size(107, 68);
-            label3.TabIndex = 8;
-            label3.MouseEnter += Pull_up_UI;
-            label3.MouseLeave += Pull_down_UI;
+            label2.TabIndex = 14;
+            label2.Click += label2_Click;
+            label2.MouseEnter += home_hover;
+            label2.MouseLeave += home_leave;
             // 
             // label4
             // 
-            label4.BackColor = Color.Transparent;
+            label4.BackColor = SystemColors.ButtonFace;
             label4.Image = (Image)resources.GetObject("label4.Image");
-            label4.Location = new Point(639, 99);
+            label4.Location = new Point(632, 103);
             label4.Name = "label4";
-            label4.Size = new Size(88, 68);
+            label4.Size = new Size(59, 68);
             label4.TabIndex = 9;
-            label4.MouseEnter += Pull_up_UI;
-            label4.MouseLeave += Pull_down_UI;
+            label4.MouseEnter += karaoke_hover;
+            label4.MouseLeave += karaoke_leave;
             // 
             // label5
             // 
-            label5.BackColor = Color.Transparent;
+            label5.BackColor = SystemColors.ButtonFace;
             label5.Image = (Image)resources.GetObject("label5.Image");
-            label5.Location = new Point(871, 99);
+            label5.Location = new Point(858, 103);
             label5.Name = "label5";
-            label5.Size = new Size(100, 68);
+            label5.Size = new Size(71, 68);
             label5.TabIndex = 10;
-            label5.MouseEnter += Pull_up_UI;
-            label5.MouseLeave += Pull_down_UI;
+            label5.MouseEnter += movie_hover;
+            label5.MouseLeave += movie_leave;
             // 
             // label6
             // 
+            label6.BackColor = SystemColors.ButtonFace;
             label6.Image = (Image)resources.GetObject("label6.Image");
-            label6.Location = new Point(1125, 103);
+            label6.Location = new Point(1108, 103);
             label6.Name = "label6";
-            label6.Size = new Size(88, 64);
+            label6.Size = new Size(64, 64);
             label6.TabIndex = 11;
-            label6.MouseEnter += Pull_up_UI;
-            label6.MouseLeave += Pull_down_UI;
+            label6.MouseEnter += meeting_hover;
+            label6.MouseLeave += meeting_leave;
             // 
             // UI_Clock
             // 
@@ -205,6 +112,104 @@
             UI_Clock.MouseEnter += Pull_up_UI;
             UI_Clock.MouseLeave += Pull_down_UI;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = SystemColors.ButtonFace;
+            label7.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(12, 77);
+            label7.Name = "label7";
+            label7.Padding = new Padding(15, 35, 110, 35);
+            label7.Size = new Size(232, 115);
+            label7.TabIndex = 13;
+            label7.Text = "Home";
+            label7.Click += label7_Click;
+            label7.MouseEnter += home_hover;
+            label7.MouseLeave += home_leave;
+            // 
+            // label3
+            // 
+            label3.BackColor = SystemColors.ButtonFace;
+            label3.Image = (Image)resources.GetObject("label3.Image");
+            label3.Location = new Point(357, 103);
+            label3.Name = "label3";
+            label3.Size = new Size(107, 68);
+            label3.TabIndex = 8;
+            label3.MouseEnter += golf_hover;
+            label3.MouseLeave += golf_leave;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = SystemColors.ButtonFace;
+            label8.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(250, 77);
+            label8.Name = "label8";
+            label8.Padding = new Padding(15, 35, 138, 35);
+            label8.Size = new Size(232, 115);
+            label8.TabIndex = 15;
+            label8.Text = "Golf";
+            label8.MouseEnter += golf_hover;
+            label8.MouseLeave += golf_leave;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = SystemColors.ButtonFace;
+            label9.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(488, 77);
+            label9.Name = "label9";
+            label9.Padding = new Padding(15, 35, 83, 35);
+            label9.Size = new Size(232, 115);
+            label9.TabIndex = 16;
+            label9.Text = "Karaoke";
+            label9.Click += label9_Click;
+            label9.MouseEnter += karaoke_hover;
+            label9.MouseLeave += karaoke_leave;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = SystemColors.ButtonFace;
+            label10.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(726, 77);
+            label10.Name = "label10";
+            label10.Padding = new Padding(15, 35, 95, 35);
+            label10.Size = new Size(232, 115);
+            label10.TabIndex = 17;
+            label10.Text = "Movies";
+            label10.MouseEnter += movie_hover;
+            label10.MouseLeave += movie_leave;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = SystemColors.ButtonFace;
+            label11.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(964, 77);
+            label11.Name = "label11";
+            label11.Padding = new Padding(15, 35, 78, 35);
+            label11.Size = new Size(232, 115);
+            label11.TabIndex = 18;
+            label11.Text = "Meeting";
+            label11.MouseEnter += meeting_hover;
+            label11.MouseLeave += meeting_leave;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = SystemColors.ButtonFace;
+            label12.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(1202, 77);
+            label12.Name = "label12";
+            label12.Padding = new Padding(15, 35, 15, 35);
+            label12.Size = new Size(117, 115);
+            label12.TabIndex = 19;
+            label12.Text = "Help";
+            label12.TextAlign = ContentAlignment.MiddleCenter;
+            label12.MouseEnter += system_hover;
+            label12.MouseLeave += system_leave;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(144F, 144F);
@@ -212,19 +217,19 @@
             BackColor = SystemColors.Window;
             ClientSize = new Size(1322, 211);
             ControlBox = false;
+            Controls.Add(label12);
+            Controls.Add(label2);
+            Controls.Add(label7);
             Controls.Add(UI_Clock);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(label8);
+            Controls.Add(label9);
+            Controls.Add(label10);
+            Controls.Add(label11);
             Name = "Form1";
             Opacity = 0.8D;
             ShowIcon = false;
@@ -237,19 +242,18 @@
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
         private Label label1;
         private Label label2;
-        private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private Label UI_Clock;
+        private Label label7;
+        private Label label3;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
     }
 }

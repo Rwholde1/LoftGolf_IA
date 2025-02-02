@@ -73,9 +73,29 @@ namespace LoftGolfOverlayUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap golf_highlight1 {
+            get {
+                object obj = ResourceManager.GetObject("golf_highlight1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap karaoke_highlight {
             get {
                 object obj = ResourceManager.GetObject("karaoke_highlight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap karaoke_highlight1 {
+            get {
+                object obj = ResourceManager.GetObject("karaoke_highlight1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +123,39 @@ namespace LoftGolfOverlayUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap meeting_highlight1 {
+            get {
+                object obj = ResourceManager.GetObject("meeting_highlight1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap movie_highlight {
             get {
                 object obj = ResourceManager.GetObject("movie_highlight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_highlight1 {
+            get {
+                object obj = ResourceManager.GetObject("movie_highlight1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap system_highlight1 {
+            get {
+                object obj = ResourceManager.GetObject("system_highlight1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
