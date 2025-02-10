@@ -3,11 +3,12 @@ namespace LoftGolfOverlayUI
     public partial class Form1 : Form
     {
         private System.Windows.Forms.Timer timer;
-        public Form1()
+        private Form2.activity currActivity;
+        public Form1(Form2.activity newActivity)
         {
             InitializeComponent();
+            currActivity = newActivity;
             this.Location = new System.Drawing.Point(465, 1420);
-
             // Initialize timer
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;  // Set interval to 1 second (1000 ms)
@@ -60,17 +61,12 @@ namespace LoftGolfOverlayUI
 
         private void label2_Click(object sender, EventArgs e)
         {
-            caution("home");
+            caution(Form2.activity.home);
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-            caution("home");
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
+            caution(Form2.activity.home);
         }
 
         private void golf_hover(object sender, EventArgs e)
@@ -126,8 +122,8 @@ namespace LoftGolfOverlayUI
 
         private void system_hover(object sender, EventArgs e)
         {
-            label12.BackgroundImage = Properties.Resources.system_highlight1; // Make sure to add your image to Resources
-            label12.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
+            label12.BackgroundImage = Properties.Resources.system_highlight1;
+            label12.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void system_leave(object sender, EventArgs e)
@@ -135,13 +131,127 @@ namespace LoftGolfOverlayUI
             label12.BackgroundImage = null;
         }
 
-        private void caution(string destination)
+        private void caution(Form2.activity newActivity)
         {
-            Form3 form3 = new Form3(destination);
+            Form3 form3 = new Form3(newActivity, currActivity);
 
             form3.Show();
 
             this.Hide();
+        }
+
+        private void restart(Form2.activity newActivity)
+        {
+            Form5 form5 = new Form5(newActivity);
+            form5.Show();
+            this.Hide();
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.golf)
+            {
+                restart(Form2.activity.golf);
+            }
+            else
+            {
+                caution(Form2.activity.golf);
+            }
+        }
+
+
+        private void label12_Click(object sender, EventArgs e) // help menu
+        {
+            /*
+            form5 form5 = new form5();
+            form5.Show();
+            this.Hide();
+            */
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.golf)
+            {
+                restart(Form2.activity.golf);
+            }
+            else
+            {
+                caution(Form2.activity.golf);
+            }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.karaoke)
+            {
+                restart(Form2.activity.karaoke);
+            }
+            else
+            {
+                caution(Form2.activity.karaoke);
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.karaoke)
+            {
+                restart(Form2.activity.karaoke);
+            }
+            else
+            {
+                caution(Form2.activity.karaoke);
+            }
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.movie)
+            {
+                restart(Form2.activity.movie);
+            }
+            else
+            {
+                caution(Form2.activity.movie);
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.movie)
+            {
+                restart(Form2.activity.movie);
+            }
+            else
+            {
+                caution(Form2.activity.movie);
+            }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.meeting)
+            {
+                restart(Form2.activity.meeting);
+            }
+            else
+            {
+                caution(Form2.activity.meeting);
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            if (currActivity == Form2.activity.meeting)
+            {
+                restart(Form2.activity.meeting);
+            }
+            else
+            {
+                caution(Form2.activity.meeting);
+            }
         }
     }
 }

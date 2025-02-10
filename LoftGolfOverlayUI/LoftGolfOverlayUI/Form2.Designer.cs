@@ -63,6 +63,7 @@
             button2.TabIndex = 1;
             button2.Text = "MOVIES";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             button2.MouseEnter += button2_MouseEnter;
             button2.MouseLeave += button2_MouseLeave;
             // 
@@ -77,6 +78,7 @@
             button3.TabIndex = 2;
             button3.Text = "KARAOKE";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             button3.MouseEnter += button3_MouseEnter;
             button3.MouseLeave += button3_MouseLeave;
             // 
@@ -91,6 +93,7 @@
             button4.TabIndex = 3;
             button4.Text = "MEETINGS";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             button4.MouseEnter += button4_MouseEnter;
             button4.MouseLeave += button4_MouseLeave;
             // 

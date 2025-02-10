@@ -12,10 +12,17 @@ namespace LoftGolfOverlayUI
 {
     public partial class Form2 : Form
     {
+        public enum activity
+        {
+            home, golf, karaoke, movie, meeting
+        }
+        public activity currActivity = activity.home;
+
         public Form2()
         {
             InitializeComponent();
             this.Location = new System.Drawing.Point(0, 0);
+            currActivity = 0;
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
@@ -64,13 +71,35 @@ namespace LoftGolfOverlayUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // temporary functionality to transition between activites page and overlay
+            // temporary functionality to transition between activites home page and overlay
+            currActivity = activity.golf;
+            Form1 form1 = new Form1(currActivity);
+            
+            // ============== insert subsequent forms and automation execution here
 
-            Form1 form1 = new Form1();
+            // ============== 
 
             form1.Show();
 
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
         }
 
         /*

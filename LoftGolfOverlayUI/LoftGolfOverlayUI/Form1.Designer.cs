@@ -75,6 +75,7 @@
             label4.Name = "label4";
             label4.Size = new Size(59, 68);
             label4.TabIndex = 9;
+            label4.Click += label4_Click;
             label4.MouseEnter += karaoke_hover;
             label4.MouseLeave += karaoke_leave;
             // 
@@ -86,6 +87,7 @@
             label5.Name = "label5";
             label5.Size = new Size(71, 68);
             label5.TabIndex = 10;
+            label5.Click += label5_Click;
             label5.MouseEnter += movie_hover;
             label5.MouseLeave += movie_leave;
             // 
@@ -97,6 +99,7 @@
             label6.Name = "label6";
             label6.Size = new Size(64, 64);
             label6.TabIndex = 11;
+            label6.Click += label6_Click;
             label6.MouseEnter += meeting_hover;
             label6.MouseLeave += meeting_leave;
             // 
@@ -106,9 +109,9 @@
             UI_Clock.Font = new Font("Segoe UI", 26F, FontStyle.Regular, GraphicsUnit.Point);
             UI_Clock.Location = new Point(994, 0);
             UI_Clock.Name = "UI_Clock";
-            UI_Clock.Size = new Size(278, 70);
+            UI_Clock.Size = new Size(224, 70);
             UI_Clock.TabIndex = 12;
-            UI_Clock.Text = "TIME HERE";
+            UI_Clock.Text = "Time is...";
             UI_Clock.MouseEnter += Pull_up_UI;
             UI_Clock.MouseLeave += Pull_down_UI;
             // 
@@ -135,6 +138,7 @@
             label3.Name = "label3";
             label3.Size = new Size(107, 68);
             label3.TabIndex = 8;
+            label3.Click += label3_Click;
             label3.MouseEnter += golf_hover;
             label3.MouseLeave += golf_leave;
             // 
@@ -149,6 +153,7 @@
             label8.Size = new Size(232, 115);
             label8.TabIndex = 15;
             label8.Text = "Golf";
+            label8.Click += label8_Click;
             label8.MouseEnter += golf_hover;
             label8.MouseLeave += golf_leave;
             // 
@@ -178,6 +183,7 @@
             label10.Size = new Size(232, 115);
             label10.TabIndex = 17;
             label10.Text = "Movies";
+            label10.Click += label10_Click;
             label10.MouseEnter += movie_hover;
             label10.MouseLeave += movie_leave;
             // 
@@ -192,6 +198,7 @@
             label11.Size = new Size(232, 115);
             label11.TabIndex = 18;
             label11.Text = "Meeting";
+            label11.Click += label11_Click;
             label11.MouseEnter += meeting_hover;
             label11.MouseLeave += meeting_leave;
             // 
@@ -207,6 +214,7 @@
             label12.TabIndex = 19;
             label12.Text = "Help";
             label12.TextAlign = ContentAlignment.MiddleCenter;
+            label12.Click += label12_Click;
             label12.MouseEnter += system_hover;
             label12.MouseLeave += system_leave;
             // 
