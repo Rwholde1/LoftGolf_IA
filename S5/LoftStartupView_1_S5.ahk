@@ -16,9 +16,9 @@ Loop, 2  ; Sign into VIEW
 {
     if WinExist("ahk_exe VIEW.exe") {
         WinActivate "ahk_exe VIEW.exe"
-        ClickButton("ahk_exe VIEW.exe", 455, 340)  ; Click the top recent user
+        ClickIfCorrectColor(455, 340, 0x4d4d4d)            ; Click the top recent user
         Sleep 200
-        ClickButton("ahk_exe VIEW.exe", 1375, 1025)  ; Click the start button
+        ClickIfCorrectColor(1375, 1025, 0xFF344D)          ; Click the start button
     }
     Sleep 500  ; Sleep for 1/2 second before checking again
 }
@@ -29,7 +29,7 @@ Loop, 2  ; Click ADD
 {
     if WinExist("ahk_exe VIEW.exe") {
         WinActivate "ahk_exe VIEW.exe"
-        ClickButton("ahk_exe VIEW.exe", 1360, 910)  ; Click ADD button
+        ClickIfCorrectColor(1360, 910, COLOR)  ; Click ADD button
     }
     Sleep 500  ; Sleep for 1/2 second before checking again
 }
@@ -40,7 +40,7 @@ Loop, 2  ; Click Club
 {
     if WinExist("ahk_exe VIEW.exe") {
         WinActivate "ahk_exe VIEW.exe"
-        ClickButton("ahk_exe VIEW.exe", 317, 380)  ; Click Club button
+        ClickIfCorrectColor(317, 380, COLOR)  ; Click Club button
     }
     Sleep 500  ; Sleep for 1/2 second before checking again
 }
@@ -51,7 +51,7 @@ Loop, 2  ; Click Photo
 {
     if WinExist("ahk_exe VIEW.exe") {
         WinActivate "ahk_exe VIEW.exe"
-        ClickButton("ahk_exe VIEW.exe", 1770, 445)  ; Click Photo button
+        ClickIfCorrectColor(1770, 445, COLOR)  ; Click Photo button
     }
     Sleep 500  ; Sleep for 1/2 second before checking again
 }

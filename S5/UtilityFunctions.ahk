@@ -21,6 +21,12 @@ CheckPixelColor(x, y, expectedColor) {
     return false
 }
 
+ClickIfCorrectColor(x, y, expectedColor)
+{
+    if(CheckPixelColor(x, y, expectedColor))
+        Click x, y
+}
+
 ; Function to check and activate a window or run a program
 ActivateOrRun(winTitle, exePath) {
     If WinExist(winTitle)
