@@ -4,11 +4,12 @@ namespace LoftGolfOverlayUI
     {
         private System.Windows.Forms.Timer timer;
         private Form2.activity currActivity;
+        private bool helpShown = false;
         public Form1(Form2.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
-            this.Location = new System.Drawing.Point(465, 1420);
+            this.Location = new System.Drawing.Point(465, 1000);
             // Initialize timer
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;  // Set interval to 1 second (1000 ms)
@@ -18,7 +19,7 @@ namespace LoftGolfOverlayUI
 
         private void Pull_up_UI(object sender, EventArgs e)
         {
-            while (this.Location.Y > 1290)
+            while (this.Location.Y > 900)
             {
                 this.Location = new System.Drawing.Point(465, Location.Y - 1);
             }
@@ -37,7 +38,7 @@ namespace LoftGolfOverlayUI
                 this.PointToClient(Cursor.Position).Y < 0)
             {
                 // this.Location = new System.Drawing.Point(465, 1440);
-                while (this.Location.Y < 1420)
+                while (this.Location.Y < 1000)
                 {
                     this.Location = new System.Drawing.Point(465, Location.Y + 1);
                 }
@@ -47,7 +48,7 @@ namespace LoftGolfOverlayUI
         private void Timer_Tick(object sender, EventArgs e)
         {
             // Update the label with the current system time
-            UI_Clock.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            UI_Clock.Text = DateTime.Now.ToString("T");
         }
 
         private void goHome()
@@ -163,11 +164,9 @@ namespace LoftGolfOverlayUI
 
         private void label12_Click(object sender, EventArgs e) // help menu
         {
-            /*
-            form5 form5 = new form5();
-            form5.Show();
+            Form6 form6 = new Form6(currActivity);
+            form6.Show();
             this.Hide();
-            */
         }
 
         private void label3_Click(object sender, EventArgs e)

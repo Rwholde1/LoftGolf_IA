@@ -1,0 +1,301 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\loftgolfoverlayui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\loftgolfoverlayui\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\loftgolfoverlayui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\loftgolfoverlayui\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|c:\\users\\heidk\\onedrive\\documents\\github\\loftgolf_ia\\loftgolfoverlayui\\loftgolfoverlayui\\form6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\loftgolfoverlayui\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\loftgolfoverlayui\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\loftgolfoverlayui\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BD8280E-3CF4-438A-ACDC-953E7983E16C}|LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj|solutionrelative:loftgolfoverlayui\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form6.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form6.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form6.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form6.cs*",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form6.cs*",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAuwD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:54:45.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form6.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form6.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form6.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form6.cs [Design]*",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form6.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:54:16.408Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form6.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form6.Designer.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form6.Designer.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form6.Designer.cs*",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form6.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:54:38.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form5.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form5.Designer.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form5.Designer.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form5.Designer.cs",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form5.Designer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:54:26.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form2.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form2.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form2.cs",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form2.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:37.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form2.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form2.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form2.cs [Design]",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.233Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form4.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form4.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form4.cs [Design]",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.239Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form5.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form5.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form5.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form5.cs",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form5.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wCQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form3.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form3.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form3.cs",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form3.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Program.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Program.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Program.cs",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form4.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form4.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form4.cs",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form4.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form1.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form1.cs",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form1.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADwv1cAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form5.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form5.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form5.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form5.cs [Design]",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form5.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.283Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form1.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form1.cs [Design]",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.3Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form3.cs",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form3.cs",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form3.cs [Design]",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T23:30:38.317Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form1.resx",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Form1.resx",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Form1.resx",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-02-11T23:30:38.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "LoftGolfOverlayUI\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\Properties\\Resources.resx",
+              "RelativeToolTip": "LoftGolfOverlayUI\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-02-11T23:30:38.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
