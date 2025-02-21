@@ -20,26 +20,26 @@ namespace LoftGolfOverlayUI
             currActivity = newActivity;
             this.Location = new System.Drawing.Point(0, 0);
         }
-        private void button1_MouseEnter(object sender, EventArgs e)
+        private void newUserBtn_MouseEnter(object sender, EventArgs e)
         {
-            button1.BackgroundImage = Properties.Resources.golf_highlight; // Make sure to add your image to Resources
-            button1.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
+            newUserBtn.BackgroundImage = Properties.Resources.golf_highlight; // Make sure to add your image to Resources
+            newUserBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
-        private void button1_MouseLeave(object sender, EventArgs e)
+        private void newUserBtn_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackgroundImage = null;
+            newUserBtn.BackgroundImage = null;
         }
 
-        private void button2_MouseEnter(object sender, EventArgs e)
+        private void returningUserBtn_MouseEnter(object sender, EventArgs e)
         {
-            button2.BackgroundImage = Properties.Resources.movie_highlight; // Make sure to add your image to Resources
-            button2.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
+            returningUserBtn.BackgroundImage = Properties.Resources.movie_highlight; // Make sure to add your image to Resources
+            returningUserBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
-        private void button2_MouseLeave(object sender, EventArgs e)
+        private void returningUserBtn_MouseLeave(object sender, EventArgs e)
         {
-            button2.BackgroundImage = null;
+            returningUserBtn.BackgroundImage = null;
         }
 
         private void button1_Click(object sender, EventArgs e)

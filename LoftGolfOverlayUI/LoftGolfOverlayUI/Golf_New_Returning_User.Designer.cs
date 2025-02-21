@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            newUserBtn = new Button();
+            returningUserBtn = new Button();
             SuspendLayout();
             // 
             // label1
@@ -48,30 +48,34 @@
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.UseWaitCursor = true;
             // 
-            // button1
+            // newUserBtn
             // 
-            button1.BackColor = Color.Black;
-            button1.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.Control;
-            button1.Location = new Point(10, 450);
-            button1.Name = "button1";
-            button1.Size = new Size(1109, 762);
-            button1.TabIndex = 7;
-            button1.Text = "New User";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            newUserBtn.BackColor = Color.Black;
+            newUserBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
+            newUserBtn.ForeColor = SystemColors.Control;
+            newUserBtn.Location = new Point(10, 450);
+            newUserBtn.Name = "newUserBtn";
+            newUserBtn.Size = new Size(1109, 762);
+            newUserBtn.TabIndex = 7;
+            newUserBtn.Text = "New User";
+            newUserBtn.UseVisualStyleBackColor = false;
+            newUserBtn.Click += button1_Click;
+            newUserBtn.MouseEnter += newUserBtn_MouseEnter;
+            newUserBtn.MouseLeave += newUserBtn_MouseLeave;
             // 
-            // button2
+            // returningUserBtn
             // 
-            button2.BackColor = SystemColors.Desktop;
-            button2.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(1143, 450);
-            button2.Name = "button2";
-            button2.Size = new Size(1107, 762);
-            button2.TabIndex = 8;
-            button2.Text = "Returning User";
-            button2.UseVisualStyleBackColor = false;
+            returningUserBtn.BackColor = SystemColors.Desktop;
+            returningUserBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
+            returningUserBtn.ForeColor = Color.White;
+            returningUserBtn.Location = new Point(1143, 450);
+            returningUserBtn.Name = "returningUserBtn";
+            returningUserBtn.Size = new Size(1107, 762);
+            returningUserBtn.TabIndex = 8;
+            returningUserBtn.Text = "Returning User";
+            returningUserBtn.UseVisualStyleBackColor = false;
+            returningUserBtn.MouseEnter += returningUserBtn_MouseEnter;
+            returningUserBtn.MouseLeave += returningUserBtn_MouseLeave;
             // 
             // Golf_New_Returning_User
             // 
@@ -80,8 +84,8 @@
             BackColor = Color.Black;
             ClientSize = new Size(2258, 1478);
             ControlBox = false;
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(returningUserBtn);
+            Controls.Add(newUserBtn);
             Controls.Add(label1);
             Name = "Golf_New_Returning_User";
             ResumeLayout(false);
@@ -91,7 +95,7 @@
         #endregion
 
         private Label label1;
-        private Button button1;
-        private Button button2;
+        private Button newUserBtn;
+        private Button returningUserBtn;
     }
 }

@@ -7,13 +7,17 @@ namespace LoftGolfOverlayUI
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
+        /// 
+        private static Form currentForm;
+
         [STAThread]
         static void Main()
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form2());
+            currentForm = new Form2();
+            Application.Run(currentForm);
             /* 
              * TO DO:
              *     O -ADD AN ARROW TO THE TOP PORTION OF OVERLAY TO INDICATE THE MENU CAN SLIDE UP
@@ -31,6 +35,17 @@ namespace LoftGolfOverlayUI
              *     O -KEEP FORM ON SCREEN ABOVE EVERYTHING
              *     X -PROGRAM BUTTONS
              */
+        }
+
+        public static void changeForm(Form form)
+        {
+            if(currentForm != null)
+            {
+                currentForm.Hide();
+            }
+            
+            currentForm = form;
+            currentForm.Show();
         }
 
         
