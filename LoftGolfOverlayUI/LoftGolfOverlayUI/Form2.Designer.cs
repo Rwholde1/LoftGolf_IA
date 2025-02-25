@@ -111,13 +111,14 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(2258, 1478);
+            ClientSize = new Size(2258, 1504);
             ControlBox = false;
             Controls.Add(pictureBox1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             ShowIcon = false;
             StartPosition = FormStartPosition.Manual;

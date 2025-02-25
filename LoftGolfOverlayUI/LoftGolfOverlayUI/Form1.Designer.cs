@@ -238,6 +238,7 @@
             Controls.Add(label9);
             Controls.Add(label10);
             Controls.Add(label11);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Opacity = 0.8D;
             ShowIcon = false;

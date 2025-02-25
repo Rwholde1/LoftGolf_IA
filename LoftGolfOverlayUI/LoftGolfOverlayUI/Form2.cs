@@ -74,7 +74,7 @@ namespace LoftGolfOverlayUI
             // temporary functionality to transition between activites home page and overlay
             currActivity = activity.golf;
             Form1 form1 = new Form1(currActivity);
-            
+
             // ============== insert subsequent forms and automation execution here
 
             // ============== 
@@ -86,8 +86,9 @@ namespace LoftGolfOverlayUI
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             Form4 form4 = new Form4();
-            form4.Show();
+            form4.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
