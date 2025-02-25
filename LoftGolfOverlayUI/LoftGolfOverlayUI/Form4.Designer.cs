@@ -65,8 +65,10 @@
             ControlBox = false;
             Controls.Add(button1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Location = new Point(826, 412);
             Name = "Form4";
+            StartPosition = FormStartPosition.CenterScreen;
             TopMost = true;
             ResumeLayout(false);
             PerformLayout();
