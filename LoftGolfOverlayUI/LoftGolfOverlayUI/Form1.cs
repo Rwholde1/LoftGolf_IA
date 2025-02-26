@@ -144,7 +144,7 @@ namespace LoftGolfOverlayUI
         private void restart(Form2.activity newActivity)
         {
             Form5 form5 = new Form5(newActivity);
-            form5.Show();
+            form5.ShowDialog();
             this.Hide();
 
         }

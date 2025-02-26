@@ -107,7 +107,9 @@
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form5";
+            StartPosition = FormStartPosition.CenterScreen;
             TopMost = true;
             ResumeLayout(false);
             PerformLayout();
