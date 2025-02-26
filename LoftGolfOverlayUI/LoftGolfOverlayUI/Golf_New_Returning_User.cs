@@ -12,6 +12,11 @@ namespace LoftGolfOverlayUI
 {
     public partial class Golf_New_Returning_User : Form
     {
+        public enum userType
+        {
+            newUser, returningUser
+        }
+        public userType user;
         private Form2.activity currActivity;
 
         public Golf_New_Returning_User(Form2.activity newActivity)
@@ -44,7 +49,14 @@ namespace LoftGolfOverlayUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            user = userType.newUser;
+            Program.changeForm(new Golf_Video_Transition(currActivity, user));
+        }
 
+        private void returningUserBtn_Click(object sender, EventArgs e)
+        {
+            user = userType.returningUser;
+            Program.changeForm(new Golf_Video_Transition(currActivity, user));
         }
     }
 }

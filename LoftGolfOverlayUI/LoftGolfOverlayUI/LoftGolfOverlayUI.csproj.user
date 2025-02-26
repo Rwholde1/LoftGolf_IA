@@ -19,5 +19,11 @@
     <Compile Update="Golf_New_Returning_User.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Golf_Understanding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Golf_Video_Transition.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -68,12 +68,13 @@
             returningUserBtn.BackColor = SystemColors.Desktop;
             returningUserBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             returningUserBtn.ForeColor = Color.White;
-            returningUserBtn.Location = new Point(1143, 450);
+            returningUserBtn.Location = new Point(1141, 450);
             returningUserBtn.Name = "returningUserBtn";
-            returningUserBtn.Size = new Size(1107, 762);
+            returningUserBtn.Size = new Size(1109, 762);
             returningUserBtn.TabIndex = 8;
             returningUserBtn.Text = "Returning User";
             returningUserBtn.UseVisualStyleBackColor = false;
+            returningUserBtn.Click += returningUserBtn_Click;
             returningUserBtn.MouseEnter += returningUserBtn_MouseEnter;
             returningUserBtn.MouseLeave += returningUserBtn_MouseLeave;
             // 
