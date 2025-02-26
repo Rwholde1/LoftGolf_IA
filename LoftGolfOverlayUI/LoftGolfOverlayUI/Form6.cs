@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +13,16 @@ namespace LoftGolfOverlayUI
 {
     public partial class Form6 : Form
     {
+        private const string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe";
+        private const string exampleScript = @"C:\Users\heidk\OneDrive\Documents\AutoHotkey\exampleScript.ahk";
+        private static Process ahkProcess;
+
         private Form2.activity currActivity;
         private int yesCount;
         private int noCount;
         private string stage;
         private bool special;
+        private ProcessStartInfo psi;
         public Form6(Form2.activity newActivity)
         {
             InitializeComponent();
@@ -25,6 +31,14 @@ namespace LoftGolfOverlayUI
             noCount = 0;
             stage = "";
             special = false;
+            ahkProcess = null;
+
+            psi = new ProcessStartInfo
+            {
+                FileName = ahkexe,
+                Arguments = $"\"{exampleScript}\"",
+                UseShellExecute = true
+            };
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -58,6 +72,37 @@ namespace LoftGolfOverlayUI
             noButton.Visible = false;
         }
 
+        private void stopAHKScript()
+        {
+            if (ahkProcess != null && !ahkProcess.HasExited)
+            {
+                ahkProcess.Kill();
+                ahkProcess.Dispose();
+                ahkProcess = null;
+            }
+        }
+
+        private void runAHKScript(string scriptPath)
+        {
+            stopAHKScript();
+
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = ahkexe,
+                Arguments = $"\"{scriptPath}\"",
+                UseShellExecute = true
+            };
+
+            try
+            {
+                ahkProcess = Process.Start(psi);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error launching AHK script: " + ex.Message);
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e) // yes button
         {
             switch (stage)
@@ -84,6 +129,7 @@ namespace LoftGolfOverlayUI
                     break;
                 case "YN":
                     questionLabel.Text = "Running automation to reconnect GSPro. After this has finished running, is the issue resolved?";
+                    runAHKScript(exampleScript);
                     break;
                 case "YNY":
                     endHelp();

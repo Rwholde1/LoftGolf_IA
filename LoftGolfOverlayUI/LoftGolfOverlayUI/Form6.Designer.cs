@@ -114,7 +114,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Form6";
             ShowInTaskbar = false;
-            TopMost = true;
+            StartPosition = FormStartPosition.CenterScreen;
             Load += Form6_Load;
             ResumeLayout(false);
             PerformLayout();
