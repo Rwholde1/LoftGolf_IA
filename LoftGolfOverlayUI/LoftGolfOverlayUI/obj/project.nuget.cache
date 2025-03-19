@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NByzSpLY6SjPDK/kya3y91R66P8pmEsPqYlq+4ksEeNMm4vxXVfNXY1lfaVEz/z+u7m5CDAqhunRZFGWM1I0Cg==",
+  "dgSpecHash": "BhjU7mGHlSW74KM+0K1DetEX11z4yFvHExfHYdXK0WUbLzrF4NXl7VDxLlQRHPub8nXgu0VpYqACVj8rxMfH4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rowan\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\RoadK\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

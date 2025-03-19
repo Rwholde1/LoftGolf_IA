@@ -24,13 +24,13 @@ namespace LoftGolfOverlayUI
             switch (currActivity)
             {
                 case Form2.activity.home:
-                    Form2 form2 = new Form2();
-                    form2.Show();
+                    Program.changeForm(new Form2());
                     this.Hide();
                     break;
                 case Form2.activity.golf:
                     // run autohotkey stuff for golf
-                    displayOverlay(currActivity);
+                    Program.changeForm(new Golf_New_Returning_User(currActivity));
+                    this.Hide();
                     break;
                 case Form2.activity.karaoke:
                     // run autohotkey stuff for karaoke
