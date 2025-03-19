@@ -6,7 +6,7 @@
 #Include C:\LOFT\AutoHotkey\UtilityFunctions.ahk
 
 ; Main process
-BlockInput true
+;BlockInput true
 
 
 ;============================================================================================
@@ -15,15 +15,28 @@ BlockInput true
 ; If screen resolution is dif, change the values below
 ScreenResX := 1440
 ScreenResY := 900
+xScaler := CalcResScaleX(ScreenResX)
+yScaler := CalcResScaleY(ScreenResY)
 
 RecentUserColor := 0x4D4D4D
-RecentUserColor2 := 0x11DFF8
-RecentUserX := 224
-RecentUserY := 305
+RecentUserX := Round(224 * xScaler)
+RecentUserY := Round(305 * yScaler)
 
 StartColor := 0x414144
-StartX := 981
-StartY := 857
+StartX := Round(981 * xScaler)
+StartY := Round(857 * yScaler)
+
+AddColor := 0xB52133
+AddX := 980
+AddY := 768
+
+ClubColor := 0xA0A0A0
+ClubX := 265
+ClubY := 300
+
+PhotoColor := 0xF4F4F4
+PhotoX := 1307
+PhotoY := 371
 
 ;============================================================================================
 RecentUserClicked := false
@@ -41,37 +54,10 @@ while (!WinExist("ahk_exe VIEW.exe"))                                           
 
 ClickFast(RecentUserX, RecentUserY, RecentUserColor)
 ClickFast(StartX, StartY, StartColor)
+ClickFast(AddX, AddY, AddColor)
+ClickFast(ClubX, ClubY, ClubColor)
+ClickFast(PhotoX, PhotoY, PhotoColor)
 
-Loop 20  ; Click ADD
-{
-    if WinExist("ahk_exe VIEW.exe") {
-        WinActivate "ahk_exe VIEW.exe"
-        ClickIfCorrectColor(1360, 910, COLOR)  ; Click ADD button
-    }
-    Sleep 500  ; Sleep for 1/2 second before checking again
-}
-
-Sleep 1000  ; Sleep for 1 second
-
-Loop 20  ; Click Club
-{
-    if WinExist("ahk_exe VIEW.exe") {
-        WinActivate "ahk_exe VIEW.exe"
-        ClickIfCorrectColor(317, 380, COLOR)  ; Click Club button
-    }
-    Sleep 500  ; Sleep for 1/2 second before checking again
-}
-
-Sleep 500  ; Sleep for 1/2 second
-
-Loop 20  ; Click Photo
-{
-    if WinExist("ahk_exe VIEW.exe") {
-        WinActivate "ahk_exe VIEW.exe"
-        ClickIfCorrectColor(1770, 445, COLOR)  ; Click Photo button
-    }
-    Sleep 500  ; Sleep for 1/2 second before checking again
-}
 
 BlockInput false
 
