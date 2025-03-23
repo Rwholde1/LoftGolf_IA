@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoftGolfOverlayUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97320afc2d9a52b1107ccb31d91a2bf99fd4081d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoftGolfOverlayUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoftGolfOverlayUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
