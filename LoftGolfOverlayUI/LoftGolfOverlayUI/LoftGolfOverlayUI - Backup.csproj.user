@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
   <ItemGroup>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
@@ -17,9 +16,6 @@
     <Compile Update="Form5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form6.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Golf_New_Returning_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -27,6 +23,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Golf_Video_Transition.cs">
+    <Compile Update="Form6.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

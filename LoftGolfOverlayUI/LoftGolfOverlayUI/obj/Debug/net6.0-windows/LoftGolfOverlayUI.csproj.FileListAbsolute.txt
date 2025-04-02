@@ -78,3 +78,12 @@ C:\Users\RoadK\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\o
 C:\Users\RoadK\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.pdb
 C:\Users\RoadK\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.genruntimeconfig.cache
 C:\Users\RoadK\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\ref\LoftGolfOverlayUI.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\Interop.WMPLib.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\AxInterop.WMPLib.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\Interop.WMPLib.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\AxInterop.WMPLib.dll
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.csproj.ResolveComReference.cache
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.Form6.resources
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.Golf_New_Returning_User.resources
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.Golf_Understanding.resources
+C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.Golf_Video_Transition.resources

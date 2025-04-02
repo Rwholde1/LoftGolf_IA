@@ -24,12 +24,13 @@ namespace LoftGolfOverlayUI
 
         private void Golf_Video_Transition_Shown(object sender, EventArgs e)
         {
-            if(userType == Golf_New_Returning_User.userType.returningUser)
+            if (userType == Golf_New_Returning_User.userType.returningUser)
             {
                 label1.Text = "  Getting golf ready for you! Just a moment! ";
                 axWindowsMediaPlayer1.URL = @"C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo.mp4";
                 axWindowsMediaPlayer1.uiMode = "none";
-            } else
+            }
+            else
             {
                 label1.Text = "Please watch this video to learn how to golf!";
                 axWindowsMediaPlayer1.URL = @"C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo2.mp4";
@@ -41,7 +42,7 @@ namespace LoftGolfOverlayUI
 
         private void axWindowsMediaPlayer1_EndOfStream(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
-            if(axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
             {
                 if (userType == Golf_New_Returning_User.userType.returningUser)
                 {

@@ -88,7 +88,9 @@
             Controls.Add(returningUserBtn);
             Controls.Add(newUserBtn);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Golf_New_Returning_User";
+            StartPosition = FormStartPosition.CenterScreen;
             ResumeLayout(false);
             PerformLayout();
         }

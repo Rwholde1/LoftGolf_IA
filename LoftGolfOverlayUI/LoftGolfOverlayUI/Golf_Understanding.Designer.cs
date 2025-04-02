@@ -88,7 +88,9 @@
             Controls.Add(videoAgainBtn);
             Controls.Add(golfBtn);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Golf_Understanding";
+            StartPosition = FormStartPosition.CenterScreen;
             ResumeLayout(false);
             PerformLayout();
         }
