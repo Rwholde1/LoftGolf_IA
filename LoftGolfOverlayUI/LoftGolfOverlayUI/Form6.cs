@@ -15,6 +15,10 @@ namespace LoftGolfOverlayUI
     {
         private const string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe";
         private const string exampleScript = @"C:\Users\heidk\OneDrive\Documents\AutoHotkey\exampleScript.ahk";
+        private const string exampleExe = @"C:\Users\heidk\OneDrive\Documents\AutoHotkey\exampleScript.exe";
+        private const string runGSPROReconnect = @"C:\LOFT\AutoHotkey\ResetGSProConnect.ahk";
+        private const string fullSimRestart = @"C:\LOFT\LoftUI\Loft_Full_Reset_Sim.exe"; // exe or ahk?
+        private const string fullSystemReboot = @"C:\LOFT\AutoHotkey\LoftFullRestart.ahk";
         private static Process ahkProcess;
 
         private Form2.activity currActivity;
@@ -32,13 +36,6 @@ namespace LoftGolfOverlayUI
             stage = "";
             special = false;
             ahkProcess = null;
-
-            psi = new ProcessStartInfo
-            {
-                FileName = ahkexe,
-                Arguments = $"\"{exampleScript}\"",
-                UseShellExecute = true
-            };
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -103,8 +100,24 @@ namespace LoftGolfOverlayUI
             }
         }
 
+        private void runAHKExe(string exePath)
+        {
+            stopAHKScript();
+
+            try
+            {
+                Process.Start(exePath);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error launching exe script: " + ex.Message);
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e) // yes button
         {
+            // this represents the previous string of answers
+            // (ex: YN means from the start of troubleshooting, user answered yes, and then no to the next question)
             switch (stage)
             {
                 case "":
@@ -129,7 +142,8 @@ namespace LoftGolfOverlayUI
                     break;
                 case "YN":
                     questionLabel.Text = "Running automation to reconnect GSPro. After this has finished running, is the issue resolved?";
-                    runAHKScript(exampleScript);
+                    //runAHKScript(exampleScript);
+                    runAHKExe(exampleExe);
                     break;
                 case "YNY":
                     endHelp();
@@ -170,6 +184,8 @@ namespace LoftGolfOverlayUI
 
         private void button3_Click(object sender, EventArgs e) // no button
         {
+            // this represents the previous string of answers
+            // (ex: YN means from the start of troubleshooting, user answered yes, and then no to the next question)
             switch (stage)
             {
                 case "":
