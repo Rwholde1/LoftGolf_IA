@@ -52,8 +52,8 @@ namespace LoftGolfOverlayUI
         }
         private void under_Construction()
         {
-            Form4 form3 = new Form4();
-            form3.Show();
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
         }
         private void displayOverlay(Form2.activity newActivity)
         {
@@ -68,7 +68,6 @@ namespace LoftGolfOverlayUI
         {
             Form1 form1 = new Form1(currActivity);
             form1.Show();
-         
             this.Hide();
         }
     }

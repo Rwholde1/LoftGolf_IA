@@ -120,9 +120,11 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             MinimizeBox = false;
             Name = "Form3";
             ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
             TopMost = true;
             ResumeLayout(false);
             PerformLayout();

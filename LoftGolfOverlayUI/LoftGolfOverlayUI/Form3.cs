@@ -17,6 +17,7 @@ namespace LoftGolfOverlayUI
         public Form3(Form2.activity newActivity, Form2.activity prevActivity)
         {
             InitializeComponent();
+            this.Location = new System.Drawing.Point(750, 450);
             nextActivity = newActivity;
             this.prevActivity = prevActivity;
         }
@@ -38,7 +39,7 @@ namespace LoftGolfOverlayUI
         private void under_Construction()
         {
             Form4 form3 = new Form4();
-            form3.Show();
+            form3.ShowDialog();
         }
 
 

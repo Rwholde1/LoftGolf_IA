@@ -73,12 +73,16 @@ namespace LoftGolfOverlayUI
         {
             currActivity = activity.golf;
             Program.changeForm(new Golf_New_Returning_User(currActivity));
+            // ============== insert subsequent forms and automation execution here
+            System.Diagnostics.Process.Start("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+            // ============== 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             Form4 form4 = new Form4();
-            form4.Show();
+            form4.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -89,8 +93,17 @@ namespace LoftGolfOverlayUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+            // temporary functionality to transition between activites home page and overlay
+            currActivity = activity.meeting;
+            Form1 form1 = new Form1(currActivity);
+
+            // ============== insert subsequent forms and automation execution here
+            System.Diagnostics.Process.Start("\"C:\\Users\\admin\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe\"");
+            // ============== 
+
+            form1.Show();
+
+            this.Hide();
         }
 
         /*
