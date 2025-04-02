@@ -39,23 +39,25 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Segoe UI", 28F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(350, 150);
+            label1.Location = new Point(280, 120);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Padding = new Padding(250, 0, 250, 0);
-            label1.Size = new Size(500, 74);
+            label1.Padding = new Padding(200, 0, 200, 0);
+            label1.Size = new Size(400, 62);
             label1.TabIndex = 7;
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.UseWaitCursor = true;
             // 
             // Golf_Video_Transition
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(2258, 1478);
+            ClientSize = new Size(1554, 882);
             ControlBox = false;
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Golf_Video_Transition";
             StartPosition = FormStartPosition.CenterScreen;
             Shown += Golf_Video_Transition_Shown;
