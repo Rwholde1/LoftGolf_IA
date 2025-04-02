@@ -30,8 +30,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Golf_Video_Transition));
+            axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             label1 = new Label();
             SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
             // 
             // label1
             // 
@@ -47,6 +50,16 @@
             label1.TabIndex = 7;
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.UseWaitCursor = true;
+            // axWindowsMediaPlayer1
+            // 
+            axWindowsMediaPlayer1.Enabled = true;
+            axWindowsMediaPlayer1.Location = new Point(160, 300);
+            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
+            axWindowsMediaPlayer1.Size = new Size(1920, 1080);
+            axWindowsMediaPlayer1.TabIndex = 0;
+            axWindowsMediaPlayer1.PlayStateChange += axWindowsMediaPlayer1_EndOfStream;
+            // 
             // 
             // Golf_Video_Transition
             // 
@@ -56,11 +69,13 @@
             ClientSize = new Size(1554, 882);
             ControlBox = false;
             Controls.Add(label1);
+            Controls.Add(axWindowsMediaPlayer1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 2, 2, 2);
             Name = "Golf_Video_Transition";
             StartPosition = FormStartPosition.CenterScreen;
             Shown += Golf_Video_Transition_Shown;
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

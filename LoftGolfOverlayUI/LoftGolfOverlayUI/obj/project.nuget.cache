@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "BhjU7mGHlSW74KM+0K1DetEX11z4yFvHExfHYdXK0WUbLzrF4NXl7VDxLlQRHPub8nXgu0VpYqACVj8rxMfH4Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\RoadK\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
   "expectedPackageFiles": [],
+=======
+  "dgSpecHash": "9RS4ktEWHuI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\heidk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\heidk\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\heidk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\heidk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
+  ],
+>>>>>>> Stashed changes
   "logs": []
 }

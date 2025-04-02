@@ -8,24 +8,40 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
+<<<<<<< Updated upstream
     "C:\\Users\\RoadK\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\heidk\\.nuget\\packages\\": {}
+>>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\RoadK\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
       "projectName": "LoftGolfOverlayUI",
       "projectPath": "C:\\Users\\RoadK\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
       "packagesPath": "C:\\Users\\RoadK\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\RoadK\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
+      "projectName": "LoftGolfOverlayUI",
+      "projectPath": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
+      "packagesPath": "C:\\Users\\heidk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\heidk\\OneDrive\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< Updated upstream
         "C:\\Users\\RoadK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+        "C:\\Users\\heidk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -46,6 +62,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -62,6 +83,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -70,7 +109,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

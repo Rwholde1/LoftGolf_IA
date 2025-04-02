@@ -9,7 +9,7 @@ namespace LoftGolfOverlayUI
         {
             InitializeComponent();
             currActivity = newActivity;
-            this.Location = new System.Drawing.Point(465, 1420);
+            this.Location = new System.Drawing.Point(400, 745);
             // Initialize timer
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;  // Set interval to 1 second (1000 ms)
@@ -19,7 +19,7 @@ namespace LoftGolfOverlayUI
 
         private void Pull_up_UI(object sender, EventArgs e)
         {
-            while (this.Location.Y > 1290)
+            while (this.Location.Y > 570)
             {
                 this.Location = new System.Drawing.Point(465, Location.Y - 1);
             }
