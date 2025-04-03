@@ -12,14 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< Updated upstream
-      "C:\\Users\\RoadK\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\RoadK\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-=======
-      "C:\\Users\\heidk\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\heidk\\.nuget\\packages"
->>>>>>> Stashed changes
+      "C:\\Users\\admin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\admin\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
