@@ -39,11 +39,11 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Segoe UI", 28F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(42, 124);
+            label1.Location = new Point(140, 94);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Padding = new Padding(200, 0, 200, 0);
-            label1.Size = new Size(1188, 62);
+            label1.Padding = new Padding(175, 0, 175, 0);
+            label1.Size = new Size(977, 51);
             label1.TabIndex = 6;
             label1.Text = "Have you golfed at Loft Golf before?";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -54,10 +54,10 @@
             newUserBtn.BackColor = Color.Black;
             newUserBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             newUserBtn.ForeColor = SystemColors.Control;
-            newUserBtn.Location = new Point(10, 305);
-            newUserBtn.Margin = new Padding(2, 2, 2, 2);
+            newUserBtn.Location = new Point(83, 230);
+            newUserBtn.Margin = new Padding(2);
             newUserBtn.Name = "newUserBtn";
-            newUserBtn.Size = new Size(630, 420);
+            newUserBtn.Size = new Size(551, 315);
             newUserBtn.TabIndex = 7;
             newUserBtn.Text = "New User";
             newUserBtn.UseVisualStyleBackColor = false;
@@ -70,10 +70,10 @@
             returningUserBtn.BackColor = SystemColors.Desktop;
             returningUserBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             returningUserBtn.ForeColor = Color.White;
-            returningUserBtn.Location = new Point(645, 305);
-            returningUserBtn.Margin = new Padding(2, 2, 2, 2);
+            returningUserBtn.Location = new Point(638, 230);
+            returningUserBtn.Margin = new Padding(2);
             returningUserBtn.Name = "returningUserBtn";
-            returningUserBtn.Size = new Size(630, 420);
+            returningUserBtn.Size = new Size(551, 315);
             returningUserBtn.TabIndex = 8;
             returningUserBtn.Text = "Returning User";
             returningUserBtn.UseVisualStyleBackColor = false;
@@ -83,7 +83,7 @@
             // 
             // Golf_New_Returning_User
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1280, 800);
@@ -92,7 +92,7 @@
             Controls.Add(newUserBtn);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Golf_New_Returning_User";
             StartPosition = FormStartPosition.CenterScreen;
             ResumeLayout(false);
