@@ -26,7 +26,7 @@ namespace LoftGolfOverlayUI
         {
             if (userType == Golf_New_Returning_User.userType.returningUser)
             {
-                label1.Text = "  Getting golf ready for you! Just a moment! ";
+                label1.Text = "Getting golf ready for you! Just a moment!";
                 axWindowsMediaPlayer1.URL = @"C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo.mp4";
                 axWindowsMediaPlayer1.uiMode = "none";
             }
