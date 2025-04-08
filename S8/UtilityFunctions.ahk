@@ -9,7 +9,7 @@ ColorMatch(x, y, expectedColor) {
 ClickFast(x, y, expectedColor)
 {
     ButtonClicked := false
-    if (1)        ; for DEBUG set to 1
+    if (true)        ; for DEBUGGING set to true
     {
         Sleep 20000
         MsgBox("Pixel at (" x "," y ") = " Format("0x{:06X}", color) "`nExpected: " Format("0x{:06X}", expectedColor))
