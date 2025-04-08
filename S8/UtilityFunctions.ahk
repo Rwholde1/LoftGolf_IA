@@ -24,16 +24,6 @@ ClickFast(x, y, expectedColor)
     }
 }
 
-CalcResScaleX(xRes)
-{
-    return xRes / 1440
-}
-
-CalcResScaleY(yRes)
-{
-    return yRes / 900
-}
-
 ; Function to check and activate a window or run a program
 ActivateOrRun(winTitle, exePath) {
     If WinExist(winTitle)
