@@ -37,7 +37,7 @@ ClickFast(x, y, expectedColor)
     }
 }
 
-DeleteSessions()
+DeleteSessions(rem)
 {
     Sleep 7000
     if (PixelGetColor(53, 206) != 0x222224)     ; see if active sessions exist
@@ -51,7 +51,10 @@ DeleteSessions()
             Click(163, 1048, 5)
             Sleep 200
         }
-        ClickFast(38, 98, 0x424144)     ; click add session button
+        if (rem == 1)
+        {
+            ClickFast(38, 98, 0x424144)     ; click add session button
+        }
     }
 }
 
