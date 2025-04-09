@@ -39,10 +39,11 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Segoe UI", 28F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(675, 250);
+            label1.Location = new Point(324, 110);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Padding = new Padding(250, 0, 250, 0);
-            label1.Size = new Size(885, 74);
+            label1.Padding = new Padding(175, 0, 175, 0);
+            label1.Size = new Size(610, 51);
             label1.TabIndex = 7;
             label1.Text = "Ready to golf?";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -53,9 +54,10 @@
             golfBtn.BackColor = Color.Black;
             golfBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             golfBtn.ForeColor = SystemColors.Control;
-            golfBtn.Location = new Point(10, 450);
+            golfBtn.Location = new Point(83, 229);
+            golfBtn.Margin = new Padding(2);
             golfBtn.Name = "golfBtn";
-            golfBtn.Size = new Size(1109, 762);
+            golfBtn.Size = new Size(551, 315);
             golfBtn.TabIndex = 8;
             golfBtn.Text = "Let's Golf!";
             golfBtn.UseVisualStyleBackColor = false;
@@ -68,9 +70,10 @@
             videoAgainBtn.BackColor = SystemColors.Desktop;
             videoAgainBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             videoAgainBtn.ForeColor = Color.White;
-            videoAgainBtn.Location = new Point(1141, 450);
+            videoAgainBtn.Location = new Point(638, 229);
+            videoAgainBtn.Margin = new Padding(2);
             videoAgainBtn.Name = "videoAgainBtn";
-            videoAgainBtn.Size = new Size(1109, 762);
+            videoAgainBtn.Size = new Size(551, 315);
             videoAgainBtn.TabIndex = 9;
             videoAgainBtn.Text = "Watch the video again";
             videoAgainBtn.UseVisualStyleBackColor = false;
@@ -80,15 +83,16 @@
             // 
             // Golf_Understanding
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(2258, 1478);
+            ClientSize = new Size(1280, 800);
             ControlBox = false;
             Controls.Add(videoAgainBtn);
             Controls.Add(golfBtn);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "Golf_Understanding";
             StartPosition = FormStartPosition.CenterScreen;
             ResumeLayout(false);

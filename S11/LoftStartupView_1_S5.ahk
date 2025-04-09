@@ -50,7 +50,7 @@ while (!WinExist("ahk_exe VIEW.exe"))                                           
 
 ClickFast(RecentUserX, RecentUserY, RecentUserColor)
 ClickFast(StartX, StartY, StartColor)
-DeleteSessions()
+DeleteSessions(1)
 ClickFast(AddX, AddY, AddColor)
 ClickFast(ClubX, ClubY, ClubColor)
 ClickFast(PhotoX, PhotoY, PhotoColor)

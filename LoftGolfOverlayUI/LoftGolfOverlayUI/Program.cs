@@ -16,6 +16,7 @@ namespace LoftGolfOverlayUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            // Form2.activity currActivity = Form2.activity.golf;
             currentForm = new Form2();
             Application.Run(currentForm);
             /* 

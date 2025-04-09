@@ -1,15 +1,19 @@
 ; Contains useful functions for AutoHotKey scripts
 
+; Checks to see if the color of the pixel at (x, y) matches the expected color
 ColorMatch(x, y, expectedColor) {
-    ; Get the color of the pixel at (x, y)
     color := PixelGetColor(x, y)
-    ; MsgBox("Pixel at (" x "," y ") = " Format("0x{:06X}", color) "`nExpected: " Format("0x{:06X}", expectedColor))
     return color == expectedColor
 }
 
 ClickFast(x, y, expectedColor)
 {
     ButtonClicked := false
+    if (true)        ; for DEBUGGING set to true
+    {
+        Sleep 20000
+        MsgBox("Pixel at (" x "," y ") = " Format("0x{:06X}", color) "`nExpected: " Format("0x{:06X}", expectedColor))
+    }    
     while (!ButtonClicked)
         {
         if(ColorMatch(x, y, expectedColor))
@@ -18,16 +22,6 @@ ClickFast(x, y, expectedColor)
             ButtonClicked := true
         }
     }
-}
-
-CalcResScaleX(xRes)
-{
-    return xRes / 1440
-}
-
-CalcResScaleY(yRes)
-{
-    return yRes / 900
 }
 
 ; Function to check and activate a window or run a program

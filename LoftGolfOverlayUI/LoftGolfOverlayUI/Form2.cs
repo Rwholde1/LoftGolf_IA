@@ -74,13 +74,13 @@ namespace LoftGolfOverlayUI
             currActivity = activity.golf;
             Program.changeForm(new Golf_New_Returning_User(currActivity));
             // ============== insert subsequent forms and automation execution here
-            System.Diagnostics.Process.Start("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+            //System.Diagnostics.Process.Start("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
             // ============== 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
             Form4 form4 = new Form4();
             form4.ShowDialog();
         }

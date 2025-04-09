@@ -1,4 +1,6 @@
-﻿namespace LoftGolfOverlayUI
+﻿using LoftGolfOverlayUI.Properties;
+
+namespace LoftGolfOverlayUI
 {
     partial class Golf_Video_Transition : Form
     {
@@ -30,8 +32,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Golf_Video_Transition));
+            axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             label1 = new Label();
             SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
             // 
             // label1
             // 
@@ -39,26 +44,40 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Segoe UI", 28F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(350, 150);
+            label1.Location = new Point(264, 45);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Padding = new Padding(250, 0, 250, 0);
-            label1.Size = new Size(500, 74);
+            label1.Padding = new Padding(0, 0, 0, 0);
+            label1.Size = new Size(350, 51);
             label1.TabIndex = 7;
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.UseWaitCursor = true;
+            //
+            // axWindowsMediaPlayer1
+            // 
+            axWindowsMediaPlayer1.Enabled = true;
+            axWindowsMediaPlayer1.Location = new Point(40, 86);
+            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
+            axWindowsMediaPlayer1.Size = new Size(1200, 720);
+            axWindowsMediaPlayer1.TabIndex = 0;
+            axWindowsMediaPlayer1.PlayStateChange += axWindowsMediaPlayer1_EndOfStream;
             // 
             // Golf_Video_Transition
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(2258, 1478);
+            ClientSize = new Size(1280, 800);
             ControlBox = false;
             Controls.Add(label1);
+            Controls.Add(axWindowsMediaPlayer1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "Golf_Video_Transition";
             StartPosition = FormStartPosition.CenterScreen;
             Shown += Golf_Video_Transition_Shown;
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

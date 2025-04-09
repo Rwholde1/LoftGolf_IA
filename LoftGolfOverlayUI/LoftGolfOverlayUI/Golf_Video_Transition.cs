@@ -26,14 +26,14 @@ namespace LoftGolfOverlayUI
         {
             if (userType == Golf_New_Returning_User.userType.returningUser)
             {
-                label1.Text = "  Getting golf ready for you! Just a moment! ";
-                axWindowsMediaPlayer1.URL = @"C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo.mp4";
+                label1.Text = "Getting golf ready for you! Just a moment!";
+                axWindowsMediaPlayer1.URL = @"C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo.mp4";
                 axWindowsMediaPlayer1.uiMode = "none";
             }
             else
             {
                 label1.Text = "Please watch this video to learn how to golf!";
-                axWindowsMediaPlayer1.URL = @"C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo2.mp4";
+                axWindowsMediaPlayer1.URL = @"C:\Users\admin\Documents\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo2.mp4";
                 axWindowsMediaPlayer1.uiMode = "none";
             }
 
