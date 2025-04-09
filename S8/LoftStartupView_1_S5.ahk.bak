@@ -49,6 +49,8 @@ while (!WinExist("ahk_exe VIEW.exe"))                                           
     WinActivate "ahk_exe VIEW.exe"
 }
 
+MsgBox("Hello")
+
 ClickFast(RecentUserX, RecentUserY, RecentUserColor)
 ClickFast(StartX, StartY, StartColor)
 ClickFast(AddX, AddY, AddColor)

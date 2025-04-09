@@ -1,19 +1,38 @@
 ; Contains useful functions for AutoHotKey scripts
 
+<<<<<<< Updated upstream
 ; Checks to see if the color of the pixel at (x, y) matches the expected color
 ColorMatch(x, y, expectedColor) {
+=======
+DebugColor := true
+
+============================================================================================================================================================================
+; Checks to see if the color of the pixel at (x, y) matches the expected color
+ColorMatch(x, y, expectedColor)
+{
+>>>>>>> Stashed changes
     color := PixelGetColor(x, y)
     return color == expectedColor
 }
 
 ClickFast(x, y, expectedColor)
 {
+    MsgBox("HEYY")
     ButtonClicked := false
+<<<<<<< Updated upstream
     if (true)        ; for DEBUGGING set to true
     {
         Sleep 20000
         MsgBox("Pixel at (" x "," y ") = " Format("0x{:06X}", color) "`nExpected: " Format("0x{:06X}", expectedColor))
     }    
+=======
+    if (DebugColor)
+    {
+        Sleep 20000
+        color := PixelGetColor(x, y)
+        MsgBox("Pixel at (" x "," y ") = " Format("0x{:06X}", color) "`nExpected: " Format("0x{:06X}", expectedColor))
+    }
+>>>>>>> Stashed changes
     while (!ButtonClicked)
         {
         if(ColorMatch(x, y, expectedColor))
