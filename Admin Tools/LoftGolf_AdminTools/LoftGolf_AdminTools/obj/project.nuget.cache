@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gX48fwY07rf+wVUbT2hXOlVGl1hIXWRi69CqbmbWAHR7hrNwUUgEQKcZKeXz8XAyjHOaYjmA/QQy3QwV44DzbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rowan\\Documents\\Unity\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rowan\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

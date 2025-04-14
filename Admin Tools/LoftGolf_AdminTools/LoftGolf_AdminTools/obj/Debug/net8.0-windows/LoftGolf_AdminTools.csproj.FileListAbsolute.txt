@@ -1,0 +1,36 @@
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.exe
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.deps.json
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.runtimeconfig.json
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.dll
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.pdb
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.Form1.resources
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.csproj.GenerateResource.cache
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.AssemblyInfoInputs.cache
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.AssemblyInfo.cs
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.csproj.CoreCompileInputs.cache
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.dll
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\refint\LoftGolf_AdminTools.dll
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.pdb
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.genruntimeconfig.cache
+C:\Users\Rowan\source\repos\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\ref\LoftGolf_AdminTools.dll
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.csproj.AssemblyReference.cache
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.Form1.resources
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.csproj.GenerateResource.cache
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.AssemblyInfoInputs.cache
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.AssemblyInfo.cs
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.csproj.CoreCompileInputs.cache
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.sourcelink.json
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.dll
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\refint\LoftGolf_AdminTools.dll
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.pdb
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.exe
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.deps.json
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.runtimeconfig.json
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.dll
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.pdb
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\CsvHelper.dll
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.csproj.CopyComplete
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.genruntimeconfig.cache
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\ref\LoftGolf_AdminTools.dll
