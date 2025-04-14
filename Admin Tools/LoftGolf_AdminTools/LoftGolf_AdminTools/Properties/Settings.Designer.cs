@@ -22,5 +22,17 @@ namespace LoftGolf_AdminTools.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Rowan\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI")]
+        public string FilePathStub {
+            get {
+                return ((string)(this["FilePathStub"]));
+            }
+            set {
+                this["FilePathStub"] = value;
+            }
+        }
     }
 }

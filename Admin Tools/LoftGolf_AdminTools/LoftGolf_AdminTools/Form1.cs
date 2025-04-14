@@ -9,8 +9,9 @@ namespace LoftGolf_AdminTools
 {
     public partial class Form1 : Form
     {
-        string automationFilesCSVPath = @"C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\LoftGolf_UIAutomation.csv";
         public Dictionary<string, string> scriptFileDict = new Dictionary<string, string>();
+        string filePathStub = Properties.Settings.Default.FilePathStub;
+        string automationFilesCSV = "LoftGolf_UIAutomation.csv";
         public Form1()
         {
             InitializeComponent();
@@ -25,10 +26,11 @@ namespace LoftGolf_AdminTools
 
         private void DictInit(object sender, EventArgs e)
         {
-
+            filePathStub = filePathStub.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+            string fullPath = Path.Combine(filePathStub, automationFilesCSV);
             try
             {
-                using var reader = new StreamReader(automationFilesCSVPath);
+                using var reader = new StreamReader(fullPath);
                 using var automationCSV = new CsvReader(reader, CultureInfo.InvariantCulture);
 
                 var records = automationCSV.GetRecords<DictEntry>();
@@ -60,6 +62,8 @@ namespace LoftGolf_AdminTools
                     FilePathListBox.Items.Add(entry.Value);
                 }
             }
+
+            FilePathStubTextBox.Text = filePathStub;
         }
 
         private void loadScriptInfo(object sender, EventArgs e)
@@ -68,7 +72,7 @@ namespace LoftGolf_AdminTools
             {
                 string selectedScript = ScriptNameListBox.SelectedItem.ToString();
                 int currentIndex = ScriptNameListBox.SelectedIndex;
-                string selectedFilePath = FilePathListBox.Items[currentIndex].ToString();
+                string selectedFilePath = Path.GetFileName(FilePathListBox.Items[currentIndex].ToString());
 
                 SelectedScriptNameTextBox.Text = selectedScript;
                 SelectedFilePathTextBox.Text = selectedFilePath;
@@ -88,7 +92,7 @@ namespace LoftGolf_AdminTools
             {
                 int currentIndex = ScriptNameListBox.SelectedIndex;
                 string selectedScript = ScriptNameListBox.SelectedItem.ToString();
-                string newFilePath = SelectedFilePathTextBox.Text;
+                string newFilePath = Path.Combine(filePathStub, SelectedFilePathTextBox.Text);
                 FilePathListBox.Items[currentIndex] = newFilePath;
                 scriptFileDict[selectedScript] = newFilePath;
 
@@ -115,7 +119,7 @@ namespace LoftGolf_AdminTools
             if ((NewScriptNameTextBox.Text != "") && (NewFilePathTextBox.Text != ""))
             {
                 string newScript = NewScriptNameTextBox.Text;
-                string newFilePath = NewFilePathTextBox.Text;
+                string newFilePath = Path.Combine(filePathStub, NewFilePathTextBox.Text);
 
                 ScriptNameListBox.Items.Add(newScript);
                 FilePathListBox.Items.Add(newFilePath);
@@ -175,9 +179,11 @@ namespace LoftGolf_AdminTools
 
         private void FileSaveBtn_Click(object sender, EventArgs e)
         {
+            string fullPath = Path.Combine(filePathStub, automationFilesCSV);
+
             try
             {
-                using var writer = new StreamWriter(automationFilesCSVPath);
+                using var writer = new StreamWriter(fullPath);
                 using var oldCSV = new CsvHelper.CsvWriter(writer, CultureInfo.InvariantCulture);
 
                 oldCSV.WriteField("Script");
@@ -198,6 +204,25 @@ namespace LoftGolf_AdminTools
                 ErrorTextLabel.Text = "Failed to overwrite CSV.";
                 ErrorTextLabel.Visible = true;
             }
+        }
+
+        private void FilePathStubSaveBtn_Click(object sender, EventArgs e)
+        {
+            string newFilePathStub = FilePathStubTextBox.Text;
+            if (newFilePathStub != "")
+            {
+                Properties.Settings.Default.FilePathStub = newFilePathStub;
+                Properties.Settings.Default.Save();
+                filePathStub = Properties.Settings.Default.FilePathStub;
+                ErrorTextLabel.Text = "Saved file path changes.";
+                ErrorTextLabel.Visible = true;
+            }
+            else
+            {
+                ErrorTextLabel.Text = "Please enter a path to overwrite the current one.";
+                ErrorTextLabel.Visible = true;
+            }
+
         }
     }
 }

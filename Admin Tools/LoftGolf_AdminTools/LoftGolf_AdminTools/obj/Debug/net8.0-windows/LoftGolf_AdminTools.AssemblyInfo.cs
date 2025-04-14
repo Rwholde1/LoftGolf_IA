@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoftGolf_AdminTools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5931b2f300ce7b6209765aa63274da07433b950a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdc68ef37ea9256e0d578f9b4af7003cb09a2506")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoftGolf_AdminTools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoftGolf_AdminTools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

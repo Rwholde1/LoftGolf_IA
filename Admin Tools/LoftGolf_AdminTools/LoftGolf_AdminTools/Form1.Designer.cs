@@ -44,6 +44,8 @@
             ErrorTextLabel = new Label();
             DeleteSelectedScriptBtn = new Button();
             ResetChangesBtn = new Button();
+            FilePathStubSaveBtn = new Button();
+            FilePathStubTextBox = new TextBox();
             SuspendLayout();
             // 
             // label4
@@ -63,7 +65,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(355, 134);
+            label5.Location = new Point(76, 90);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(165, 37);
@@ -75,7 +77,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(801, 134);
+            label6.Location = new Point(637, 90);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(58, 37);
@@ -87,10 +89,10 @@
             ScriptNameListBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ScriptNameListBox.FormattingEnabled = true;
             ScriptNameListBox.ItemHeight = 21;
-            ScriptNameListBox.Location = new Point(300, 200);
+            ScriptNameListBox.Location = new Point(40, 156);
             ScriptNameListBox.Margin = new Padding(2);
             ScriptNameListBox.Name = "ScriptNameListBox";
-            ScriptNameListBox.Size = new Size(300, 235);
+            ScriptNameListBox.Size = new Size(240, 235);
             ScriptNameListBox.TabIndex = 15;
             ScriptNameListBox.SelectedIndexChanged += loadScriptInfo;
             // 
@@ -100,10 +102,10 @@
             FilePathListBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FilePathListBox.FormattingEnabled = true;
             FilePathListBox.ItemHeight = 21;
-            FilePathListBox.Location = new Point(680, 200);
+            FilePathListBox.Location = new Point(302, 156);
             FilePathListBox.Margin = new Padding(2);
             FilePathListBox.Name = "FilePathListBox";
-            FilePathListBox.Size = new Size(300, 235);
+            FilePathListBox.Size = new Size(741, 235);
             FilePathListBox.TabIndex = 16;
             // 
             // SelectedScriptNameTextBox
@@ -211,10 +213,10 @@
             // DeleteSelectedScriptBtn
             // 
             DeleteSelectedScriptBtn.Font = new Font("Segoe UI", 12F);
-            DeleteSelectedScriptBtn.Location = new Point(1036, 287);
+            DeleteSelectedScriptBtn.Location = new Point(1066, 243);
             DeleteSelectedScriptBtn.Margin = new Padding(2);
             DeleteSelectedScriptBtn.Name = "DeleteSelectedScriptBtn";
-            DeleteSelectedScriptBtn.Size = new Size(220, 50);
+            DeleteSelectedScriptBtn.Size = new Size(190, 50);
             DeleteSelectedScriptBtn.TabIndex = 28;
             DeleteSelectedScriptBtn.Text = "Delete Selected Script";
             DeleteSelectedScriptBtn.UseVisualStyleBackColor = true;
@@ -223,14 +225,36 @@
             // ResetChangesBtn
             // 
             ResetChangesBtn.Font = new Font("Segoe UI", 12F);
-            ResetChangesBtn.Location = new Point(1036, 357);
+            ResetChangesBtn.Location = new Point(1066, 313);
             ResetChangesBtn.Margin = new Padding(2);
             ResetChangesBtn.Name = "ResetChangesBtn";
-            ResetChangesBtn.Size = new Size(220, 50);
+            ResetChangesBtn.Size = new Size(190, 50);
             ResetChangesBtn.TabIndex = 29;
             ResetChangesBtn.Text = "Reset to Current CSV";
             ResetChangesBtn.UseVisualStyleBackColor = true;
             ResetChangesBtn.Click += ResetChangesBtn_Click;
+            // 
+            // FilePathStubSaveBtn
+            // 
+            FilePathStubSaveBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FilePathStubSaveBtn.Location = new Point(976, 411);
+            FilePathStubSaveBtn.Margin = new Padding(2);
+            FilePathStubSaveBtn.Name = "FilePathStubSaveBtn";
+            FilePathStubSaveBtn.Size = new Size(280, 50);
+            FilePathStubSaveBtn.TabIndex = 31;
+            FilePathStubSaveBtn.Text = "Save File Path Stub";
+            FilePathStubSaveBtn.UseVisualStyleBackColor = true;
+            FilePathStubSaveBtn.Click += FilePathStubSaveBtn_Click;
+            // 
+            // FilePathStubTextBox
+            // 
+            FilePathStubTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FilePathStubTextBox.Location = new Point(35, 423);
+            FilePathStubTextBox.Margin = new Padding(2);
+            FilePathStubTextBox.Name = "FilePathStubTextBox";
+            FilePathStubTextBox.PlaceholderText = "Current File Path Stub";
+            FilePathStubTextBox.Size = new Size(914, 29);
+            FilePathStubTextBox.TabIndex = 32;
             // 
             // Form1
             // 
@@ -238,6 +262,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1280, 800);
+            Controls.Add(FilePathStubTextBox);
+            Controls.Add(FilePathStubSaveBtn);
             Controls.Add(ResetChangesBtn);
             Controls.Add(DeleteSelectedScriptBtn);
             Controls.Add(ErrorTextLabel);
@@ -279,5 +305,7 @@
         private Label ErrorTextLabel;
         private Button DeleteSelectedScriptBtn;
         private Button ResetChangesBtn;
+        private Button FilePathStubSaveBtn;
+        private TextBox FilePathStubTextBox;
     }
 }
