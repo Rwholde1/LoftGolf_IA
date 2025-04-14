@@ -97,7 +97,7 @@ namespace LoftGolf_AdminTools
                 SelectedFilePathTextBox.Text = "";
                 ErrorTextLabel.Visible = false;
             }
-            else if((ScriptNameListBox.SelectedIndex == -1))
+            else if ((ScriptNameListBox.SelectedIndex == -1))
             {
                 ErrorTextLabel.Text = "Please select a valid entry to edit.";
                 ErrorTextLabel.Visible = true;
@@ -125,7 +125,7 @@ namespace LoftGolf_AdminTools
                 scriptFileDict.Add(newScript, newFilePath);
                 ErrorTextLabel.Visible = false;
             }
-            else if((NewScriptNameTextBox.Text == ""))
+            else if ((NewScriptNameTextBox.Text == ""))
             {
                 ErrorTextLabel.Text = "New script name cannot be blank.";
                 ErrorTextLabel.Visible = true;
@@ -184,14 +184,16 @@ namespace LoftGolf_AdminTools
                 oldCSV.WriteField("FilePath");
                 oldCSV.NextRecord();
 
-                foreach(var entry in scriptFileDict)
+                foreach (var entry in scriptFileDict)
                 {
                     oldCSV.WriteField(entry.Key);
                     oldCSV.WriteField(entry.Value);
                     oldCSV.NextRecord();
                 }
-                ErrorTextLabel.Visible = false;
-            } catch
+                ErrorTextLabel.Text = "Successfully saved changes.";
+                ErrorTextLabel.Visible = true;
+            }
+            catch
             {
                 ErrorTextLabel.Text = "Failed to overwrite CSV.";
                 ErrorTextLabel.Visible = true;
