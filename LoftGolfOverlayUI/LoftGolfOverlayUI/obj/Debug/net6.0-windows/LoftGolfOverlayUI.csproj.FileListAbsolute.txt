@@ -153,3 +153,7 @@ C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\o
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.pdb
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.genruntimeconfig.cache
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\ref\LoftGolfOverlayUI.dll
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\CsvHelper.dll
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.csproj.AssemblyReference.cache
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.Form6.resources
+C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.csproj.CopyComplete

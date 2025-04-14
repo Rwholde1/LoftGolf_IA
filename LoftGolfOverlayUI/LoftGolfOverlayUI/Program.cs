@@ -1,4 +1,6 @@
 using Microsoft.VisualBasic.ApplicationServices;
+using CsvHelper;
+using System.Globalization;
 
 namespace LoftGolfOverlayUI
 {
@@ -9,6 +11,8 @@ namespace LoftGolfOverlayUI
         /// </summary>
         /// 
         private static Form currentForm;
+        private static string automationFilesCSVPath = @"C:\Users\Rowan\Documents\Unity\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\LoftGolf_UIAutomation.csv"; //Change this if the CSV's file path changes
+        public static Dictionary<string, string> scriptFileDict = new Dictionary<string, string>();
 
         [STAThread]
         static void Main()
@@ -18,6 +22,7 @@ namespace LoftGolfOverlayUI
             ApplicationConfiguration.Initialize();
             // Form2.activity currActivity = Form2.activity.golf;
             currentForm = new Form2();
+            DictInit();
             Application.Run(currentForm);
             /* 
              * TO DO:
@@ -47,6 +52,32 @@ namespace LoftGolfOverlayUI
             
             currentForm = form;
             currentForm.Show();
+        }
+
+        private class DictEntry
+        {
+            public string Script { get; set; }
+            public string FilePath { get; set; }
+        }
+
+        public static void DictInit()
+        {
+            try
+            {
+                using var reader = new StreamReader(automationFilesCSVPath);
+                using var automationCSV = new CsvReader(reader, CultureInfo.InvariantCulture);
+
+                var records = automationCSV.GetRecords<DictEntry>();
+
+                foreach (var record in records)
+                {
+                    scriptFileDict.Add(record.Script, record.FilePath);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Failed to fetch CSV.");
+            }
         }
 
         

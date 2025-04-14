@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "HkjBqb6Zgms=",
+  "dgSpecHash": "FDzjmvSrtKF6aM1pwFGnMC6AA8/zavEu8IMVZHtdLDPdQqo0NQJ14BHX/SQwjcGGdnH8/b1ZxAjG/IQh9bwVaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
+  "projectFilePath": "C:\\Users\\Rowan\\Documents\\Unity\\LoftGolf_IA\\LoftGolfOverlayUI\\LoftGolfOverlayUI\\LoftGolfOverlayUI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Loft\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Loft\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Loft\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Loft\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+    "C:\\Users\\Rowan\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
+    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Rowan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
