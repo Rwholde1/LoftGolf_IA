@@ -15,14 +15,12 @@ namespace LoftGolfOverlayUI
         private Form2.activity currActivity;
         private Golf_New_Returning_User.userType userType;
         private Dictionary<string, string> scriptFileDict;
-        private string filePathStub;
         public Golf_Video_Transition(Form2.activity newActivity, Golf_New_Returning_User.userType type)
         {
             InitializeComponent();
             currActivity = newActivity;
             userType = type;
             scriptFileDict = Program.retrieveDict();
-            filePathStub = Program.retrieveScriptsFilePath();
             this.Location = new System.Drawing.Point(0, 0);
         }
 
@@ -32,19 +30,16 @@ namespace LoftGolfOverlayUI
             if (userType == Golf_New_Returning_User.userType.returningUser)
             {
                 string retUserVideoFile = scriptFileDict["GSPro Startup Video"];
-                fullPath = Path.Combine(filePathStub, retUserVideoFile);
-                axWindowsMediaPlayer1.URL = fullPath;
+                axWindowsMediaPlayer1.URL = retUserVideoFile;
                 axWindowsMediaPlayer1.uiMode = "none";
 
                 string launchGSProAHKFile = scriptFileDict["STARTUP GSPRO"];
-                fullPath = Path.Combine(filePathStub, launchGSProAHKFile);
-                //Program.runAHKScript(fullPath); //Uncomment when new file system is in place with AHK scripts
+                //Program.runAHKScript(launchGSProAHKFile); //Uncomment when new file system is in place with AHK scripts
             }
             else
             {
                 string newUserVideoFile = scriptFileDict["New User Orientation Video"];
-                fullPath = Path.Combine(filePathStub, newUserVideoFile);
-                axWindowsMediaPlayer1.URL = fullPath;
+                axWindowsMediaPlayer1.URL = newUserVideoFile;
                 axWindowsMediaPlayer1.uiMode = "none";
             }
 
