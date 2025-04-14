@@ -14,26 +14,37 @@ namespace LoftGolfOverlayUI
     {
         private Form2.activity currActivity;
         private Golf_New_Returning_User.userType userType;
+        private Dictionary<string, string> scriptFileDict;
+        private string filePathStub;
         public Golf_Video_Transition(Form2.activity newActivity, Golf_New_Returning_User.userType type)
         {
             InitializeComponent();
             currActivity = newActivity;
             userType = type;
+            scriptFileDict = Program.retrieveDict();
+            filePathStub = Program.retrieveScriptsFilePath();
             this.Location = new System.Drawing.Point(0, 0);
         }
 
         private void Golf_Video_Transition_Shown(object sender, EventArgs e)
         {
+            string fullPath = "";
             if (userType == Golf_New_Returning_User.userType.returningUser)
             {
-                label1.Text = "Getting golf ready for you! Just a moment!";
-                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo.mp4";
+                string retUserVideoFile = scriptFileDict["GSPro Startup Video"];
+                fullPath = Path.Combine(filePathStub, retUserVideoFile);
+                axWindowsMediaPlayer1.URL = fullPath;
                 axWindowsMediaPlayer1.uiMode = "none";
+
+                string launchGSProAHKFile = scriptFileDict["STARTUP GSPRO"];
+                fullPath = Path.Combine(filePathStub, launchGSProAHKFile);
+                //Program.runAHKScript(fullPath); //Uncomment when new file system is in place with AHK scripts
             }
             else
             {
-                label1.Text = "Please watch this video to learn how to golf!";
-                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo2.mp4";
+                string newUserVideoFile = scriptFileDict["New User Orientation Video"];
+                fullPath = Path.Combine(filePathStub, newUserVideoFile);
+                axWindowsMediaPlayer1.URL = fullPath;
                 axWindowsMediaPlayer1.uiMode = "none";
             }
 
