@@ -79,7 +79,5 @@ namespace LoftGolfOverlayUI
                 MessageBox.Show("Failed to fetch CSV.");
             }
         }
-
-        
     }
 }
