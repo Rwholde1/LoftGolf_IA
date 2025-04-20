@@ -161,3 +161,4 @@ C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\b
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolf.F663CDFF.Up2Date
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\Images\btn_glow.png
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\Images\btn_outline.png
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\CsvHelper.dll
