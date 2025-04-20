@@ -1,6 +1,6 @@
 ﻿namespace LoftGolfOverlayUI
 {
-    partial class Form4
+    partial class MovieBG
     {
         /// <summary>
         /// Required designer variable.
@@ -29,54 +29,38 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.ActiveCaptionText;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(22, 169);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(757, 54);
+            label1.Size = new Size(1176, 782);
             label1.TabIndex = 0;
-            label1.Text = "This page is currently under construction!";
+            label1.Tag = "bgImg";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // MovieBG
             // 
-            button1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(329, 256);
-            button1.Name = "button1";
-            button1.Size = new Size(131, 45);
-            button1.TabIndex = 1;
-            button1.Text = "Return";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // Form4
-            // 
-            AutoScaleDimensions = new SizeF(144F, 144F);
-            AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(800, 450);
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.Black;
+            BackgroundImageLayout = ImageLayout.None;
+            CausesValidation = false;
+            ClientSize = new Size(1200, 800);
             ControlBox = false;
-            Controls.Add(button1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Location = new Point(826, 412);
-            Name = "Form4";
+            MinimizeBox = false;
+            Name = "MovieBG";
+            SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
-            TopMost = true;
+            Text = "MovieBG";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
-        private Button button1;
     }
 }

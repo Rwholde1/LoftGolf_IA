@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace LoftGolfOverlayUI
 {
-    public partial class Form5 : Form
+    public partial class LeaveCurrent : Form
     {
-        Form2.activity currActivity;
-        public Form5(Form2.activity newActivity)
+        HomeScreen.activity currActivity;
+        public LeaveCurrent(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
@@ -23,41 +23,41 @@ namespace LoftGolfOverlayUI
         {
             switch (currActivity)
             {
-                case Form2.activity.home:
-                    Program.changeForm(new Form2());
+                case HomeScreen.activity.home:
+                    Program.changeForm(new HomeScreen());
                     this.Hide();
                     break;
-                case Form2.activity.golf:
+                case HomeScreen.activity.golf:
                     // run autohotkey stuff for golf
                     Program.changeForm(new Golf_New_Returning_User(currActivity));
                     this.Hide();
                     break;
-                case Form2.activity.karaoke:
+                case HomeScreen.activity.karaoke:
                     // run autohotkey stuff for karaoke
-                    under_Construction();
-                    displayOverlay(currActivity);
+                    Program.changeForm(new Hotbar(currActivity));
+                    this.Hide();
                     break;
-                case Form2.activity.movie:
+                case HomeScreen.activity.movie:
                     // run autohotkey stuff for movies
-                    under_Construction();
-                    displayOverlay(currActivity);
+                    Program.changeForm(new Hotbar(currActivity));
+                    this.Hide();
                     break;
-                case Form2.activity.meeting:
+                case HomeScreen.activity.meeting:
                     // run autohotkey stuff for meeting
-                    under_Construction();
-                    displayOverlay(currActivity);
+                    Program.changeForm(new Hotbar(currActivity));
+                    this.Hide();
                     break;
 
             };
         }
         private void under_Construction()
         {
-            Form4 form4 = new Form4();
+            UnderConstruction form4 = new UnderConstruction();
             form4.ShowDialog();
         }
-        private void displayOverlay(Form2.activity newActivity)
+        private void displayOverlay(HomeScreen.activity newActivity)
         {
-            Form1 form1 = new Form1(newActivity);
+            Hotbar form1 = new Hotbar(newActivity);
 
             form1.Show();
 
@@ -66,7 +66,7 @@ namespace LoftGolfOverlayUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1(currActivity);
+            Hotbar form1 = new Hotbar(currActivity);
             form1.Show();
             this.Hide();
         }

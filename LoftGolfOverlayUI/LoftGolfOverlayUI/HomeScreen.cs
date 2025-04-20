@@ -11,7 +11,7 @@ using Microsoft.VisualBasic.ApplicationServices;
 
 namespace LoftGolfOverlayUI
 {
-    public partial class Form2 : Form
+    public partial class HomeScreen : Form
     {
         string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
         public enum activity
@@ -20,7 +20,7 @@ namespace LoftGolfOverlayUI
         }
         public activity currActivity = activity.home;
 
-        public Form2()
+        public HomeScreen()
         {
             InitializeComponent();
             this.Location = new System.Drawing.Point(0, 0);
@@ -72,33 +72,32 @@ namespace LoftGolfOverlayUI
             button4.BackgroundImage = null;
         }
 
+        // === GOLF BUTTON ===
         private void button1_Click(object sender, EventArgs e)
         {
             currActivity = activity.golf;
             Program.changeForm(new Golf_New_Returning_User(currActivity));
-            // ============== insert subsequent forms and automation execution here
-            //System.Diagnostics.Process.Start("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
-            // ============== 
         }
 
+        // === MOVIE BUTTON === 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            Form4 form4 = new Form4();
-            form4.ShowDialog();
+            currActivity = activity.movie;
+            Program.changeForm(new Hotbar(currActivity));
         }
 
+        // === KARAOKE BUTTON ===
         private void button3_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+            currActivity = activity.karaoke;
+            Program.changeForm(new Hotbar(currActivity));
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             // temporary functionality to transition between activites home page and overlay
             currActivity = activity.meeting;
-            Form1 form1 = new Form1(currActivity);
+            Hotbar form1 = new Hotbar(currActivity);
 
             // ============== insert subsequent forms and automation execution here
             //System.Diagnostics.Process.Start("\"C:\\Users\\admin\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe\"");

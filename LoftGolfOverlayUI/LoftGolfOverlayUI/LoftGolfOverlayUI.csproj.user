@@ -2,22 +2,31 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Form1.cs">
+    <Compile Update="Hotbar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form2.cs">
+    <Compile Update="HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form3.cs">
+    <Compile Update="Caution.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form4.cs">
+    <Compile Update="KaraokeBG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form5.cs">
+    <Compile Update="MeetingBG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form6.cs">
+    <Compile Update="MovieBG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UnderConstruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LeaveCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Troubleshoot.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Golf_New_Returning_User.cs">

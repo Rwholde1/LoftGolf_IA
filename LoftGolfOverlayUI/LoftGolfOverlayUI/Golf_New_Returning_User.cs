@@ -18,9 +18,9 @@ namespace LoftGolfOverlayUI
             newUser, returningUser
         }
         public userType user;
-        private Form2.activity currActivity;
+        private HomeScreen.activity currActivity;
 
-        public Golf_New_Returning_User(Form2.activity newActivity)
+        public Golf_New_Returning_User(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;

@@ -1,16 +1,36 @@
 namespace LoftGolfOverlayUI
 {
-    public partial class Form1 : Form
+    public partial class Hotbar : Form
     {
         private System.Windows.Forms.Timer timer;
-        private Form2.activity currActivity;
+        private HomeScreen.activity currActivity;
         private bool helpShown = false;
         string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_outline.png");
-        public Form1(Form2.activity newActivity)
+
+        private KaraokeBG karaokeBGImg;
+        private MovieBG movieBGImg;
+        private MeetingBG meetingBGImg;
+
+        public Hotbar(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
-            this.Location = new System.Drawing.Point(100, 745);
+
+            if (currActivity == HomeScreen.activity.karaoke)
+            {
+                karaokeBGImg = new KaraokeBG();
+                karaokeBGImg.Show();
+            }else if (currActivity == HomeScreen.activity.movie)
+            {
+                movieBGImg = new MovieBG();
+                movieBGImg.Show();
+            }else if (currActivity == HomeScreen.activity.meeting)
+            {
+                meetingBGImg = new MeetingBG();
+                meetingBGImg.Show();
+            }
+
+                this.Location = new System.Drawing.Point(100, 745);
             // Initialize timer
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;  // Set interval to 1 second (1000 ms)
@@ -24,18 +44,11 @@ namespace LoftGolfOverlayUI
             {
                 this.Location = new System.Drawing.Point(100, Location.Y - 1);
             }
-            /*
-            for(int i = 0; i < 150; i++)
-            {
-                this.Location = new System.Drawing.Point(465, Location.Y - 1);
-            }
-            */
-            // this.Location = new System.Drawing.Point(465, 1290);
         }
 
         private void Pull_down_UI(object sender, EventArgs e)
         {
-            if (this.PointToClient(Cursor.Position).X < 0 || this.PointToClient(Cursor.Position).X > this.Width - 50 ||
+            if (this.PointToClient(Cursor.Position).X < 0 || this.PointToClient(Cursor.Position).X > this.Width - 10 ||
                 this.PointToClient(Cursor.Position).Y < 0)
             {
                 // this.Location = new System.Drawing.Point(465, 1440);
@@ -54,7 +67,7 @@ namespace LoftGolfOverlayUI
 
         private void goHome()
         {
-            Form2 form2 = new Form2();
+            HomeScreen form2 = new HomeScreen();
 
             form2.Show();
 
@@ -63,12 +76,12 @@ namespace LoftGolfOverlayUI
 
         private void label2_Click(object sender, EventArgs e)
         {
-            caution(Form2.activity.home);
+            caution(HomeScreen.activity.home);
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-            caution(Form2.activity.home);
+            caution(HomeScreen.activity.home);
         }
 
         private void golf_hover(object sender, EventArgs e)
@@ -133,18 +146,36 @@ namespace LoftGolfOverlayUI
             label12.BackgroundImage = null;
         }
 
-        private void caution(Form2.activity newActivity)
+        private void caution(HomeScreen.activity newActivity)
         {
-            Form3 form3 = new Form3(newActivity, currActivity);
-
-            form3.Show();
-
-            this.Hide();
+            Caution form3;
+            switch(currActivity){
+                case (HomeScreen.activity.golf):
+                    form3 = new Caution(newActivity, currActivity);
+                    form3.Show();
+                    this.Hide();
+                    break;
+                case (HomeScreen.activity.karaoke):
+                    form3 = new Caution(newActivity, currActivity, karaokeBGImg);
+                    form3.Show();
+                    this.Hide();
+                    break;
+                case (HomeScreen.activity.movie):
+                    form3 = new Caution(newActivity, currActivity, movieBGImg);
+                    form3.Show();
+                    this.Hide();
+                    break;
+                case (HomeScreen.activity.meeting):
+                    form3 = new Caution(newActivity, currActivity, meetingBGImg);
+                    form3.Show();
+                    this.Hide();
+                    break;
+            }
         }
 
-        private void restart(Form2.activity newActivity)
+        private void restart(HomeScreen.activity newActivity)
         {
-            Form5 form5 = new Form5(newActivity);
+            LeaveCurrent form5 = new LeaveCurrent(newActivity);
             form5.ShowDialog();
             this.Hide();
 
@@ -152,105 +183,106 @@ namespace LoftGolfOverlayUI
 
         private void label8_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.golf)
+            if (currActivity == HomeScreen.activity.golf)
             {
-                restart(Form2.activity.golf);
+                restart(HomeScreen.activity.golf);
             }
             else
             {
-                caution(Form2.activity.golf);
+                caution(HomeScreen.activity.golf);
             }
         }
 
 
         private void label12_Click(object sender, EventArgs e) // help menu
         {
-            Form6 form6 = new Form6(currActivity);
+            Troubleshoot form6 = new Troubleshoot(currActivity);
             form6.Show();
             this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.golf)
+            if (currActivity == HomeScreen.activity.golf)
             {
-                restart(Form2.activity.golf);
+                restart(HomeScreen.activity.golf);
             }
             else
             {
-                caution(Form2.activity.golf);
+                caution(HomeScreen.activity.golf);
             }
         }
 
+        // === CLICK KARAOKE BUTTON ===
         private void label9_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.karaoke)
+            if (currActivity == HomeScreen.activity.karaoke)
             {
-                restart(Form2.activity.karaoke);
+                restart(HomeScreen.activity.karaoke);
             }
             else
             {
-                caution(Form2.activity.karaoke);
+                caution(HomeScreen.activity.karaoke);
             }
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.karaoke)
+            if (currActivity == HomeScreen.activity.karaoke)
             {
-                restart(Form2.activity.karaoke);
+                restart(HomeScreen.activity.karaoke);
             }
             else
             {
-                caution(Form2.activity.karaoke);
+                caution(HomeScreen.activity.karaoke);
             }
         }
 
         private void label10_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.movie)
+            if (currActivity == HomeScreen.activity.movie)
             {
-                restart(Form2.activity.movie);
+                restart(HomeScreen.activity.movie);
             }
             else
             {
-                caution(Form2.activity.movie);
+                caution(HomeScreen.activity.movie);
             }
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.movie)
+            if (currActivity == HomeScreen.activity.movie)
             {
-                restart(Form2.activity.movie);
+                restart(HomeScreen.activity.movie);
             }
             else
             {
-                caution(Form2.activity.movie);
+                caution(HomeScreen.activity.movie);
             }
         }
 
         private void label11_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.meeting)
+            if (currActivity == HomeScreen.activity.meeting)
             {
-                restart(Form2.activity.meeting);
+                restart(HomeScreen.activity.meeting);
             }
             else
             {
-                caution(Form2.activity.meeting);
+                caution(HomeScreen.activity.meeting);
             }
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-            if (currActivity == Form2.activity.meeting)
+            if (currActivity == HomeScreen.activity.meeting)
             {
-                restart(Form2.activity.meeting);
+                restart(HomeScreen.activity.meeting);
             }
             else
             {
-                caution(Form2.activity.meeting);
+                caution(HomeScreen.activity.meeting);
             }
         }
     }

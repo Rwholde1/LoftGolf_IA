@@ -14,9 +14,9 @@ namespace LoftGolfOverlayUI
     public partial class Golf_Understanding : Form
     {
         string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
-        private Form2.activity currActivity;
+        private HomeScreen.activity currActivity;
         private Golf_New_Returning_User.userType user;
-        public Golf_Understanding(Form2.activity newActivity)
+        public Golf_Understanding(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;

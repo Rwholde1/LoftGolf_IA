@@ -14,10 +14,10 @@ namespace LoftGolfOverlayUI
 {
     public partial class Golf_Video_Transition : Form
     {
-        private Form2.activity currActivity;
+        private HomeScreen.activity currActivity;
         private Golf_New_Returning_User.userType userType;
         private Dictionary<string, string> scriptFileDict;
-        public Golf_Video_Transition(Form2.activity newActivity, Golf_New_Returning_User.userType type)
+        public Golf_Video_Transition(HomeScreen.activity newActivity, Golf_New_Returning_User.userType type)
         {
             InitializeComponent();
             currActivity = newActivity;
@@ -54,7 +54,7 @@ namespace LoftGolfOverlayUI
             {
                 if (userType == Golf_New_Returning_User.userType.returningUser)
                 {
-                    Program.changeForm(new Form1(currActivity));
+                    Program.changeForm(new Hotbar(currActivity));
                 }
                 else
                 {

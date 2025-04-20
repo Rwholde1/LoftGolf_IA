@@ -1,6 +1,6 @@
 ﻿namespace LoftGolfOverlayUI
 {
-    partial class Form6
+    partial class Troubleshoot
     {
         /// <summary>
         /// Required designer variable.

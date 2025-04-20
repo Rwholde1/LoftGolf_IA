@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace LoftGolfOverlayUI
 {
-    public partial class Form6 : Form
+    public partial class Troubleshoot : Form
     {
         // use UIA + .ahk script method instead of direct exe method
         private const string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe";
@@ -22,13 +22,13 @@ namespace LoftGolfOverlayUI
         private const string fullSystemReboot = @"C:\LOFT\AutoHotkey\LoftFullRestart.ahk";
         private static Process ahkProcess;
 
-        private Form2.activity currActivity;
+        private HomeScreen.activity currActivity;
         private int yesCount;
         private int noCount;
         private string stage;
         private bool special;
         private ProcessStartInfo psi;
-        public Form6(Form2.activity newActivity)
+        public Troubleshoot(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
@@ -52,7 +52,7 @@ namespace LoftGolfOverlayUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1(currActivity);
+            Hotbar form1 = new Hotbar(currActivity);
             form1.Show();
             this.Hide();
         }

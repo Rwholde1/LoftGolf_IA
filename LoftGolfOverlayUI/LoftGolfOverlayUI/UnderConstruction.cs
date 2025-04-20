@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LoftGolfOverlayUI
 {
-    public partial class Form4 : Form
+    public partial class UnderConstruction : Form
     {
-        public Form4()
+        public UnderConstruction()
         {
             InitializeComponent();
         }

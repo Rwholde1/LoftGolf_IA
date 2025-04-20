@@ -24,7 +24,7 @@ namespace LoftGolfOverlayUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             // Form2.activity currActivity = Form2.activity.golf;
-            currentForm = new Form2();
+            currentForm = new HomeScreen();
             DictInit();
             ahkProcess = null;
             Application.Run(currentForm);
