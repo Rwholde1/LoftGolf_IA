@@ -16,43 +16,33 @@ namespace LoftGolfOverlayUI
     {
         private Form2.activity currActivity;
         private Golf_New_Returning_User.userType userType;
-        private const string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe";
-        private const string scriptPath = @"C:\LOFT\AutoHotkey\LoftStartupGSPro_1.ahk";
+        private Dictionary<string, string> scriptFileDict;
         public Golf_Video_Transition(Form2.activity newActivity, Golf_New_Returning_User.userType type)
         {
             InitializeComponent();
             currActivity = newActivity;
             userType = type;
+            scriptFileDict = Program.retrieveDict();
             this.Location = new System.Drawing.Point(0, 0);
             this.TopMost = true;
         }
 
         private void Golf_Video_Transition_Shown(object sender, EventArgs e)
         {
+            string fullPath = "";
             if (userType == Golf_New_Returning_User.userType.returningUser)
             {
-                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Desktop\Videos\StartupVideo_3.mp4";
+                string retUserVideoFile = scriptFileDict["GSPro Startup Video"];
+                axWindowsMediaPlayer1.URL = retUserVideoFile;
                 axWindowsMediaPlayer1.uiMode = "none";
-                // run LoftStartupGSPro
-                ProcessStartInfo psi = new ProcessStartInfo
-                {
-                    FileName = ahkexe,
-                    Arguments = $"\"{scriptPath}\"",
-                    UseShellExecute = true
-                };
-                try
-                {
-                    Process.Start(psi);
-                }
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine("Error launching AHK script: " + ex.Message);
 
-                }
+                string launchGSProAHKFile = scriptFileDict["STARTUP GSPRO"];
+                //Program.runAHKScript(launchGSProAHKFile); //Uncomment when new file system is in place with AHK scripts
             }
             else
             {
-                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Desktop\Videos\LoftOrientation_5.mp4";
+                string newUserVideoFile = scriptFileDict["New User Orientation Video"];
+                axWindowsMediaPlayer1.URL = newUserVideoFile;
                 axWindowsMediaPlayer1.uiMode = "none";
             }
 

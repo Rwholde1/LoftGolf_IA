@@ -1,4 +1,7 @@
 using Microsoft.VisualBasic.ApplicationServices;
+using CsvHelper;
+using System.Globalization;
+using System.Diagnostics;
 
 namespace LoftGolfOverlayUI
 {
@@ -9,6 +12,10 @@ namespace LoftGolfOverlayUI
         /// </summary>
         /// 
         private static Form currentForm;
+        private static string automationFilesCSVPath = @"C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\LoftGolf_UIAutomation.csv"; //Change this if the CSV's file path changes
+        public static Dictionary<string, string> scriptFileDict = new Dictionary<string, string>();
+        private static string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe"; //This path is whereever the file used to run AHK script is
+        private static Process? ahkProcess;
 
         [STAThread]
         static void Main()
@@ -18,6 +25,8 @@ namespace LoftGolfOverlayUI
             ApplicationConfiguration.Initialize();
             // Form2.activity currActivity = Form2.activity.golf;
             currentForm = new Form2();
+            DictInit();
+            ahkProcess = null;
             Application.Run(currentForm);
             /* 
              * TO DO:
@@ -49,6 +58,56 @@ namespace LoftGolfOverlayUI
             currentForm.Show();
         }
 
-        
+        public static Dictionary<string, string> retrieveDict()
+        {
+            return scriptFileDict; 
+        }
+
+        private class DictEntry
+        {
+            public string Script { get; set; }
+            public string FilePath { get; set; }
+        }
+
+        public static void DictInit()
+        {
+            try
+            {
+                using var reader = new StreamReader(automationFilesCSVPath);
+                using var automationCSV = new CsvReader(reader, CultureInfo.InvariantCulture);
+
+                var records = automationCSV.GetRecords<DictEntry>();
+
+                foreach (var record in records)
+                {
+                    scriptFileDict.Add(record.Script, record.FilePath);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Failed to fetch CSV.");
+            }
+        }
+
+        public static void runAHKScript(string scriptPath)
+        {
+            //stopAHKScript(); //In initial implementation
+
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = ahkexe,
+                Arguments = $"\"{scriptPath}\"",
+                UseShellExecute = true
+            };
+
+            try
+            {
+                ahkProcess = Process.Start(psi);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error launching AHK script: " + ex.Message);
+            }
+        }
     }
 }

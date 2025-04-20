@@ -41,10 +41,10 @@ namespace LoftGolfOverlayUI
             // axWindowsMediaPlayer1
             // 
             axWindowsMediaPlayer1.Enabled = true;
-            axWindowsMediaPlayer1.Location = new Point(37, 28);
+            axWindowsMediaPlayer1.Location = new Point(40, 40);
             axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
-            axWindowsMediaPlayer1.Size = new Size(1206, 760);
+            axWindowsMediaPlayer1.Size = new Size(1200, 720);
             axWindowsMediaPlayer1.TabIndex = 0;
             axWindowsMediaPlayer1.PlayStateChange += axWindowsMediaPlayer1_EndOfStream;
             // 
