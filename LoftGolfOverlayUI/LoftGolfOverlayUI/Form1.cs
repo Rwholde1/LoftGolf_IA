@@ -5,11 +5,12 @@ namespace LoftGolfOverlayUI
         private System.Windows.Forms.Timer timer;
         private Form2.activity currActivity;
         private bool helpShown = false;
+        string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_outline.png");
         public Form1(Form2.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
-            this.Location = new System.Drawing.Point(200, 745);
+            this.Location = new System.Drawing.Point(100, 745);
             // Initialize timer
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;  // Set interval to 1 second (1000 ms)
@@ -19,9 +20,9 @@ namespace LoftGolfOverlayUI
 
         private void Pull_up_UI(object sender, EventArgs e)
         {
-            while (this.Location.Y > 660)
+            while (this.Location.Y > 230)
             {
-                this.Location = new System.Drawing.Point(200, Location.Y - 1);
+                this.Location = new System.Drawing.Point(100, Location.Y - 1);
             }
             /*
             for(int i = 0; i < 150; i++)
@@ -38,9 +39,9 @@ namespace LoftGolfOverlayUI
                 this.PointToClient(Cursor.Position).Y < 0)
             {
                 // this.Location = new System.Drawing.Point(465, 1440);
-                while (this.Location.Y < 740)
+                while (this.Location.Y < 745)
                 {
-                    this.Location = new System.Drawing.Point(200, Location.Y + 1);
+                    this.Location = new System.Drawing.Point(100, Location.Y + 1);
                 }
             }
         }
@@ -48,7 +49,7 @@ namespace LoftGolfOverlayUI
         private void Timer_Tick(object sender, EventArgs e)
         {
             // Update the label with the current system time
-            UI_Clock.Text = DateTime.Now.ToString("T");
+            UI_Clock.Text = DateTime.Now.ToString("hh:mm");
         }
 
         private void goHome()
@@ -72,7 +73,7 @@ namespace LoftGolfOverlayUI
 
         private void golf_hover(object sender, EventArgs e)
         {
-            label8.BackgroundImage = Properties.Resources.golf_highlight1; // Make sure to add your image to Resources
+            label8.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             label8.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -82,7 +83,7 @@ namespace LoftGolfOverlayUI
         }
         private void home_hover(object sender, EventArgs e)
         {
-            label7.BackgroundImage = Properties.Resources.system_highlight1; // Make sure to add your image to Resources
+            label7.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             label7.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -92,7 +93,7 @@ namespace LoftGolfOverlayUI
         }
         private void karaoke_hover(object sender, EventArgs e)
         {
-            label9.BackgroundImage = Properties.Resources.karaoke_highlight1; // Make sure to add your image to Resources
+            label9.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             label9.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -102,7 +103,7 @@ namespace LoftGolfOverlayUI
         }
         private void movie_hover(object sender, EventArgs e)
         {
-            label10.BackgroundImage = Properties.Resources.movie_highlight1; // Make sure to add your image to Resources
+            label10.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             label10.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -112,7 +113,7 @@ namespace LoftGolfOverlayUI
         }
         private void meeting_hover(object sender, EventArgs e)
         {
-            label11.BackgroundImage = Properties.Resources.meeting_highlight1; // Make sure to add your image to Resources
+            label11.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             label11.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -123,7 +124,7 @@ namespace LoftGolfOverlayUI
 
         private void system_hover(object sender, EventArgs e)
         {
-            label12.BackgroundImage = Properties.Resources.system_highlight1;
+            label12.BackgroundImage = Image.FromFile(hoverImg);
             label12.BackgroundImageLayout = ImageLayout.Stretch;
         }
 

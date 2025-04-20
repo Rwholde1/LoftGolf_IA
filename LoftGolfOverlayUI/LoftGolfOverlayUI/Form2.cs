@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace LoftGolfOverlayUI
 {
     public partial class Form2 : Form
     {
+        string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
         public enum activity
         {
             home, golf, karaoke, movie, meeting
@@ -27,7 +29,8 @@ namespace LoftGolfOverlayUI
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            button1.BackgroundImage = Properties.Resources.golf_highlight; // Make sure to add your image to Resources
+
+            button1.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             button1.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -38,7 +41,7 @@ namespace LoftGolfOverlayUI
 
         private void button2_MouseEnter(object sender, EventArgs e)
         {
-            button2.BackgroundImage = Properties.Resources.movie_highlight; // Make sure to add your image to Resources
+            button2.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             button2.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -49,7 +52,7 @@ namespace LoftGolfOverlayUI
 
         private void button3_MouseEnter(object sender, EventArgs e)
         {
-            button3.BackgroundImage = Properties.Resources.karaoke_highlight; // Make sure to add your image to Resources
+            button3.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             button3.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -60,7 +63,7 @@ namespace LoftGolfOverlayUI
 
         private void button4_MouseEnter(object sender, EventArgs e)
         {
-            button4.BackgroundImage = Properties.Resources.meeting_highlight; // Make sure to add your image to Resources
+            button4.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             button4.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -98,7 +101,7 @@ namespace LoftGolfOverlayUI
             Form1 form1 = new Form1(currActivity);
 
             // ============== insert subsequent forms and automation execution here
-            System.Diagnostics.Process.Start("\"C:\\Users\\admin\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe\"");
+            //System.Diagnostics.Process.Start("\"C:\\Users\\admin\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe\"");
             // ============== 
 
             form1.Show();

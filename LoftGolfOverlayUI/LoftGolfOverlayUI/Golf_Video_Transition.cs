@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace LoftGolfOverlayUI
 {
@@ -14,26 +16,43 @@ namespace LoftGolfOverlayUI
     {
         private Form2.activity currActivity;
         private Golf_New_Returning_User.userType userType;
+        private const string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe";
+        private const string scriptPath = @"C:\LOFT\AutoHotkey\LoftStartupGSPro_1.ahk";
         public Golf_Video_Transition(Form2.activity newActivity, Golf_New_Returning_User.userType type)
         {
             InitializeComponent();
             currActivity = newActivity;
             userType = type;
             this.Location = new System.Drawing.Point(0, 0);
+            this.TopMost = true;
         }
 
         private void Golf_Video_Transition_Shown(object sender, EventArgs e)
         {
             if (userType == Golf_New_Returning_User.userType.returningUser)
             {
-                label1.Text = "Getting golf ready for you! Just a moment!";
-                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo.mp4";
+                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Desktop\Videos\StartupVideo_3.mp4";
                 axWindowsMediaPlayer1.uiMode = "none";
+                // run LoftStartupGSPro
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = ahkexe,
+                    Arguments = $"\"{scriptPath}\"",
+                    UseShellExecute = true
+                };
+                try
+                {
+                    Process.Start(psi);
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine("Error launching AHK script: " + ex.Message);
+
+                }
             }
             else
             {
-                label1.Text = "Please watch this video to learn how to golf!";
-                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\testvideo2.mp4";
+                axWindowsMediaPlayer1.URL = @"C:\Users\Loft\Desktop\Videos\LoftOrientation_5.mp4";
                 axWindowsMediaPlayer1.uiMode = "none";
             }
 

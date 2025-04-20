@@ -12,6 +12,7 @@ namespace LoftGolfOverlayUI
 {
     public partial class Golf_New_Returning_User : Form
     {
+        string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
         public enum userType
         {
             newUser, returningUser
@@ -27,7 +28,7 @@ namespace LoftGolfOverlayUI
         }
         private void newUserBtn_MouseEnter(object sender, EventArgs e)
         {
-            newUserBtn.BackgroundImage = Properties.Resources.golf_highlight; // Make sure to add your image to Resources
+            newUserBtn.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             newUserBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -38,7 +39,7 @@ namespace LoftGolfOverlayUI
 
         private void returningUserBtn_MouseEnter(object sender, EventArgs e)
         {
-            returningUserBtn.BackgroundImage = Properties.Resources.movie_highlight; // Make sure to add your image to Resources
+            returningUserBtn.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
             returningUserBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 

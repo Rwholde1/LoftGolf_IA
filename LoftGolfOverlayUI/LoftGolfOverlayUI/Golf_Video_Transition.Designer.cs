@@ -35,8 +35,18 @@ namespace LoftGolfOverlayUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Golf_Video_Transition));
             axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             label1 = new Label();
-            SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
+            SuspendLayout();
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            axWindowsMediaPlayer1.Enabled = true;
+            axWindowsMediaPlayer1.Location = new Point(37, 28);
+            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
+            axWindowsMediaPlayer1.Size = new Size(1206, 760);
+            axWindowsMediaPlayer1.TabIndex = 0;
+            axWindowsMediaPlayer1.PlayStateChange += axWindowsMediaPlayer1_EndOfStream;
             // 
             // label1
             // 
@@ -47,21 +57,10 @@ namespace LoftGolfOverlayUI
             label1.Location = new Point(264, 45);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Padding = new Padding(0, 0, 0, 0);
-            label1.Size = new Size(350, 51);
+            label1.Size = new Size(0, 51);
             label1.TabIndex = 7;
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.UseWaitCursor = true;
-            //
-            // axWindowsMediaPlayer1
-            // 
-            axWindowsMediaPlayer1.Enabled = true;
-            axWindowsMediaPlayer1.Location = new Point(40, 86);
-            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
-            axWindowsMediaPlayer1.Size = new Size(1200, 720);
-            axWindowsMediaPlayer1.TabIndex = 0;
-            axWindowsMediaPlayer1.PlayStateChange += axWindowsMediaPlayer1_EndOfStream;
             // 
             // Golf_Video_Transition
             // 

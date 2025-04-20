@@ -153,3 +153,11 @@ C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\o
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.pdb
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.genruntimeconfig.cache
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\ref\LoftGolfOverlayUI.dll
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolfOverlayUI.csproj.AssemblyReference.cache
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\obj\Debug\net6.0-windows\LoftGolf.F663CDFF.Up2Date
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\Images\btn_glow.png
+C:\Users\Loft\Documents\GitHub\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI\bin\Debug\net6.0-windows\Images\btn_outline.png

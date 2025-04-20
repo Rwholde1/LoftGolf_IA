@@ -13,6 +13,7 @@ namespace LoftGolfOverlayUI
 {
     public partial class Form6 : Form
     {
+        // use UIA + .ahk script method instead of direct exe method
         private const string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe";
         private const string exampleScript = @"C:\Users\heidk\OneDrive\Documents\AutoHotkey\exampleScript.ahk";
         private const string exampleExe = @"C:\Users\heidk\OneDrive\Documents\AutoHotkey\exampleScript.exe";
@@ -36,6 +37,7 @@ namespace LoftGolfOverlayUI
             stage = "";
             special = false;
             ahkProcess = null;
+            this.TopMost = true;
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -67,6 +69,7 @@ namespace LoftGolfOverlayUI
             questionLabel.Text = "We will fully reboot the system. If the issue is not resolved after this, please contact Loft Golf Studios via phone/email during business hours so we can make it up to you.";
             yesButton.Visible = false;
             noButton.Visible = false;
+            runAHKScript(fullSystemReboot);
         }
 
         private void stopAHKScript()
@@ -141,9 +144,8 @@ namespace LoftGolfOverlayUI
                     endHelp();
                     break;
                 case "YN":
-                    questionLabel.Text = "Running automation to reconnect GSPro. After this has finished running, is the issue resolved?";
-                    //runAHKScript(exampleScript);
-                    runAHKExe(exampleExe);
+                    questionLabel.Text = "Running automation to reconnect GSPro. Wait until the line turns green in the bottom right corner of the window. DO NOT CLOSE: the \"Uneekor Connect\" window or GSPro will not work. After this has finished, is the issue resolved?";
+                    runAHKScript(runGSPROReconnect);
                     break;
                 case "YNY":
                     endHelp();

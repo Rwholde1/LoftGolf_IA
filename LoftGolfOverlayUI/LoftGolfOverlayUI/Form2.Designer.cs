@@ -42,10 +42,10 @@
             button1.BackColor = Color.Black;
             button1.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.Control;
-            button1.Location = new Point(8, 7);
+            button1.Location = new Point(11, 11);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(630, 380);
+            button1.Size = new Size(626, 386);
             button1.TabIndex = 0;
             button1.Text = "GOLF";
             button1.UseVisualStyleBackColor = false;
@@ -55,13 +55,13 @@
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.Desktop;
+            button2.BackColor = Color.Black;
             button2.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(642, 7);
+            button2.Location = new Point(641, 11);
             button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(630, 380);
+            button2.Size = new Size(630, 386);
             button2.TabIndex = 1;
             button2.Text = "MOVIES";
             button2.UseVisualStyleBackColor = false;
@@ -71,13 +71,13 @@
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.Desktop;
+            button3.BackColor = Color.Black;
             button3.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(8, 391);
+            button3.Location = new Point(11, 401);
             button3.Margin = new Padding(2);
             button3.Name = "button3";
-            button3.Size = new Size(630, 380);
+            button3.Size = new Size(626, 388);
             button3.TabIndex = 2;
             button3.Text = "KARAOKE";
             button3.UseVisualStyleBackColor = false;
@@ -87,13 +87,13 @@
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.Desktop;
+            button4.BackColor = Color.Black;
             button4.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(642, 391);
+            button4.Location = new Point(641, 401);
             button4.Margin = new Padding(2);
             button4.Name = "button4";
-            button4.Size = new Size(630, 380);
+            button4.Size = new Size(630, 388);
             button4.TabIndex = 3;
             button4.Text = "MEETINGS";
             button4.UseVisualStyleBackColor = false;
@@ -104,10 +104,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(513, 259);
+            pictureBox1.Location = new Point(526, 276);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(250, 250);
+            pictureBox1.Size = new Size(227, 249);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -129,6 +129,7 @@
             Margin = new Padding(2);
             Name = "Form2";
             ShowIcon = false;
+            SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.Manual;
             TopMost = true;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

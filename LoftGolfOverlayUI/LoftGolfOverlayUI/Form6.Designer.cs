@@ -39,31 +39,33 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 32F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(283, 23);
+            label1.Location = new Point(354, 19);
             label1.Name = "label1";
-            label1.Size = new Size(138, 37);
+            label1.Size = new Size(217, 59);
             label1.TabIndex = 0;
             label1.Text = "Help Page";
             label1.Click += label1_Click;
             // 
             // label2
             // 
+            label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(185, 72);
+            label2.Location = new Point(223, 78);
             label2.Name = "label2";
-            label2.Size = new Size(337, 60);
+            label2.Size = new Size(491, 181);
             label2.TabIndex = 1;
             label2.Text = "Hello there! If you are accessing the help page, we assume you are running into trouble with your shot being detected. Please answer the questions below, and we will try our best to fix your issue!\r\n";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
-            button1.Location = new Point(606, 289);
+            button1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(796, 535);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(69, 29);
+            button1.Size = new Size(110, 57);
             button1.TabIndex = 2;
             button1.Text = "Return";
             button1.UseVisualStyleBackColor = true;
@@ -71,20 +73,22 @@
             // 
             // questionLabel
             // 
+            questionLabel.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             questionLabel.ForeColor = Color.White;
-            questionLabel.Location = new Point(210, 148);
+            questionLabel.Location = new Point(211, 259);
             questionLabel.Name = "questionLabel";
-            questionLabel.Size = new Size(284, 99);
+            questionLabel.Size = new Size(518, 171);
             questionLabel.TabIndex = 3;
             questionLabel.Text = "Is the light on in the hitting area?";
             questionLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // yesButton
             // 
-            yesButton.Location = new Point(276, 249);
+            yesButton.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            yesButton.Location = new Point(286, 505);
             yesButton.Margin = new Padding(3, 2, 3, 2);
             yesButton.Name = "yesButton";
-            yesButton.Size = new Size(48, 23);
+            yesButton.Size = new Size(133, 61);
             yesButton.TabIndex = 4;
             yesButton.Text = "Yes";
             yesButton.UseVisualStyleBackColor = true;
@@ -92,10 +96,11 @@
             // 
             // noButton
             // 
-            noButton.Location = new Point(379, 249);
+            noButton.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            noButton.Location = new Point(526, 505);
             noButton.Margin = new Padding(3, 2, 3, 2);
             noButton.Name = "noButton";
-            noButton.Size = new Size(48, 23);
+            noButton.Size = new Size(133, 61);
             noButton.TabIndex = 5;
             noButton.Text = "No";
             noButton.UseVisualStyleBackColor = true;
@@ -106,7 +111,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(704, 338);
+            ClientSize = new Size(918, 603);
             ControlBox = false;
             Controls.Add(noButton);
             Controls.Add(yesButton);

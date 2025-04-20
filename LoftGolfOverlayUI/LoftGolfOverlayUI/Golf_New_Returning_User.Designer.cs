@@ -39,13 +39,13 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Segoe UI", 28F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(140, 94);
+            label1.Location = new Point(95, 147);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(175, 0, 175, 0);
-            label1.Size = new Size(977, 51);
+            label1.Size = new Size(1090, 51);
             label1.TabIndex = 6;
-            label1.Text = "Have you golfed at Loft Golf before?";
+            label1.Text = "Have you been to Loft Golf Studios before?";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.UseWaitCursor = true;
             // 
@@ -54,8 +54,8 @@
             newUserBtn.BackColor = Color.Black;
             newUserBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             newUserBtn.ForeColor = SystemColors.Control;
-            newUserBtn.Location = new Point(83, 230);
-            newUserBtn.Margin = new Padding(2);
+            newUserBtn.Location = new Point(86, 283);
+            newUserBtn.Margin = new Padding(2, 2, 2, 2);
             newUserBtn.Name = "newUserBtn";
             newUserBtn.Size = new Size(551, 315);
             newUserBtn.TabIndex = 7;
@@ -67,11 +67,11 @@
             // 
             // returningUserBtn
             // 
-            returningUserBtn.BackColor = SystemColors.Desktop;
+            returningUserBtn.BackColor = Color.Black;
             returningUserBtn.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point);
             returningUserBtn.ForeColor = Color.White;
-            returningUserBtn.Location = new Point(638, 230);
-            returningUserBtn.Margin = new Padding(2);
+            returningUserBtn.Location = new Point(641, 283);
+            returningUserBtn.Margin = new Padding(2, 2, 2, 2);
             returningUserBtn.Name = "returningUserBtn";
             returningUserBtn.Size = new Size(551, 315);
             returningUserBtn.TabIndex = 8;
@@ -92,9 +92,9 @@
             Controls.Add(newUserBtn);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Golf_New_Returning_User";
-            StartPosition = FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.Manual;
             ResumeLayout(false);
             PerformLayout();
         }
