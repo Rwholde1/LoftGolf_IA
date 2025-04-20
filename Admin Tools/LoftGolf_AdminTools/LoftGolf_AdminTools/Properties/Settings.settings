@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="FilePathStub" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Rowan\Documents\Unity\LoftGolf_IA\LoftGolfOverlayUI\LoftGolfOverlayUI</Value>
+      <Value Profile="(Default)">C:\LOFT</Value>
     </Setting>
   </Settings>
 </SettingsFile>

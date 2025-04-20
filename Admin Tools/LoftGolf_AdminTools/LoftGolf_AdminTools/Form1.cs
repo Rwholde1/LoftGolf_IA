@@ -72,7 +72,12 @@ namespace LoftGolf_AdminTools
             {
                 string selectedScript = ScriptNameListBox.SelectedItem.ToString();
                 int currentIndex = ScriptNameListBox.SelectedIndex;
-                string selectedFilePath = Path.GetFileName(FilePathListBox.Items[currentIndex].ToString());
+                string selectedFilePath = Path.GetFullPath(FilePathListBox.Items[currentIndex].ToString());
+                selectedFilePath = selectedFilePath.Replace(filePathStub, "");
+                if (selectedFilePath[0] == '\\')
+                {
+                    selectedFilePath = selectedFilePath.Substring(1);
+                }
 
                 SelectedScriptNameTextBox.Text = selectedScript;
                 SelectedFilePathTextBox.Text = selectedFilePath;

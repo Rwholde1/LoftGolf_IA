@@ -110,6 +110,7 @@
             // 
             // SelectedScriptNameTextBox
             // 
+            SelectedScriptNameTextBox.Enabled = false;
             SelectedScriptNameTextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SelectedScriptNameTextBox.Location = new Point(35, 492);
             SelectedScriptNameTextBox.Margin = new Padding(2);

@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|c:\\users\\loft\\documents\\github\\loftgolf_ia\\admin tools\\loftgolf_admintools\\loftgolf_admintools\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|solutionrelative:loftgolf_admintools\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|c:\\users\\loft\\documents\\github\\loftgolf_ia\\admin tools\\loftgolf_admintools\\loftgolf_admintools\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|solutionrelative:loftgolf_admintools\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|c:\\users\\loft\\documents\\github\\loftgolf_ia\\admin tools\\loftgolf_admintools\\loftgolf_admintools\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|solutionrelative:loftgolf_admintools\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|c:\\users\\loft\\documents\\github\\loftgolf_ia\\admin tools\\loftgolf_admintools\\loftgolf_admintools\\loftgolf_admintools.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FB427311-72A4-48E6-9FDC-8B93A9B90B23}|LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj|solutionrelative:loftgolf_admintools\\loftgolf_admintools.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "LoftGolf_AdminTools\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\Properties\\Settings.settings",
+              "RelativeToolTip": "LoftGolf_AdminTools\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-04-20T04:04:59.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoftGolf_AdminTools",
+              "DocumentMoniker": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj",
+              "RelativeDocumentMoniker": "LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj",
+              "ToolTip": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj",
+              "RelativeToolTip": "LoftGolf_AdminTools\\LoftGolf_AdminTools.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T03:14:29.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\Form1.cs",
+              "RelativeDocumentMoniker": "LoftGolf_AdminTools\\Form1.cs",
+              "ToolTip": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\Form1.cs [Design]",
+              "RelativeToolTip": "LoftGolf_AdminTools\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:14:29.981Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\Form1.cs",
+              "RelativeDocumentMoniker": "LoftGolf_AdminTools\\Form1.cs",
+              "ToolTip": "C:\\Users\\Loft\\Documents\\GitHub\\LoftGolf_IA\\Admin Tools\\LoftGolf_AdminTools\\LoftGolf_AdminTools\\Form1.cs",
+              "RelativeToolTip": "LoftGolf_AdminTools\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:14:29.983Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -29,7 +29,6 @@ namespace LoftGolfOverlayUI
 
         private void Golf_Video_Transition_Shown(object sender, EventArgs e)
         {
-            string fullPath = "";
             if (userType == Golf_New_Returning_User.userType.returningUser)
             {
                 string retUserVideoFile = scriptFileDict["GSPro Startup Video"];
@@ -37,7 +36,7 @@ namespace LoftGolfOverlayUI
                 axWindowsMediaPlayer1.uiMode = "none";
 
                 string launchGSProAHKFile = scriptFileDict["STARTUP GSPRO"];
-                //Program.runAHKScript(launchGSProAHKFile); //Uncomment when new file system is in place with AHK scripts
+                Program.runAHKScript(launchGSProAHKFile);
             }
             else
             {
