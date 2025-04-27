@@ -14,30 +14,34 @@ namespace LoftGolfOverlayUI
     public partial class Troubleshoot : Form
     {
         // use UIA + .ahk script method instead of direct exe method
-        private const string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe";
-        private const string exampleScript = @"C:\Users\heidk\OneDrive\Documents\AutoHotkey\exampleScript.ahk";
-        private const string exampleExe = @"C:\Users\heidk\OneDrive\Documents\AutoHotkey\exampleScript.exe";
-        private const string runGSPROReconnect = @"C:\LOFT\AutoHotkey\ResetGSProConnect.ahk";
-        private const string fullSimRestart = @"C:\LOFT\LoftUI\Loft_Full_Reset_Sim.exe"; // exe or ahk?
-        private const string fullSystemReboot = @"C:\LOFT\AutoHotkey\LoftFullRestart.ahk";
-        private static Process ahkProcess;
+        private Dictionary<string, string> scriptFileDict;
+        private string GSPROStartup;
+        private string runGSPROReconnect;
+        private string fullSimRestart;
+        private string fullSystemReboot;
+        private string logInView;
 
         private HomeScreen.activity currActivity;
-        private int yesCount;
-        private int noCount;
         private string stage;
         private bool special;
         private ProcessStartInfo psi;
+        private bool quit;
         public Troubleshoot(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
-            yesCount = 0;
-            noCount = 0;
             stage = "";
             special = false;
-            ahkProcess = null;
+            quit = false;
             this.TopMost = true;
+
+            scriptFileDict = Program.retrieveDict();
+            logInView = scriptFileDict["View Session Reset"];
+            GSPROStartup = scriptFileDict["STARTUP GSPRO"];
+            runGSPROReconnect = scriptFileDict["GSPro Reconnect"];
+            fullSimRestart = scriptFileDict["Full Sim Restart"];
+            fullSystemReboot = scriptFileDict["Full System Reboot"];
+
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -52,6 +56,12 @@ namespace LoftGolfOverlayUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (quit)
+            {
+                Program.changeForm(new HomeScreen());
+                this.Hide();
+                return;
+            }
             Hotbar form1 = new Hotbar(currActivity);
             form1.Show();
             this.Hide();
@@ -69,54 +79,9 @@ namespace LoftGolfOverlayUI
             questionLabel.Text = "We will fully reboot the system. If the issue is not resolved after this, please contact Loft Golf Studios via phone/email during business hours so we can make it up to you.";
             yesButton.Visible = false;
             noButton.Visible = false;
-            runAHKScript(fullSystemReboot);
+            Program.runAHKScript(fullSystemReboot);
+            quit = true;
         }
-
-        private void stopAHKScript()
-        {
-            if (ahkProcess != null && !ahkProcess.HasExited)
-            {
-                ahkProcess.Kill();
-                ahkProcess.Dispose();
-                ahkProcess = null;
-            }
-        }
-
-        private void runAHKScript(string scriptPath)
-        {
-            stopAHKScript();
-
-            ProcessStartInfo psi = new ProcessStartInfo
-            {
-                FileName = ahkexe,
-                Arguments = $"\"{scriptPath}\"",
-                UseShellExecute = true
-            };
-
-            try
-            {
-                ahkProcess = Process.Start(psi);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine("Error launching AHK script: " + ex.Message);
-            }
-        }
-
-        private void runAHKExe(string exePath)
-        {
-            stopAHKScript();
-
-            try
-            {
-                Process.Start(exePath);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine("Error launching exe script: " + ex.Message);
-            }
-        }
-
         private void button2_Click(object sender, EventArgs e) // yes button
         {
             // this represents the previous string of answers
@@ -144,8 +109,8 @@ namespace LoftGolfOverlayUI
                     endHelp();
                     break;
                 case "YN":
-                    questionLabel.Text = "Running automation to reconnect GSPro. Wait until the line turns green in the bottom right corner of the window. DO NOT CLOSE: the \"Uneekor Connect\" window or GSPro will not work. After this has finished, is the issue resolved?";
-                    runAHKScript(runGSPROReconnect);
+                    questionLabel.Text = "Running automation to reconnect GSPro. Wait until the line turns green in the bottom right corner of the window. After this has finished, is the issue resolved?";
+                    Program.runAHKScript(runGSPROReconnect);
                     break;
                 case "YNY":
                     endHelp();
@@ -197,7 +162,8 @@ namespace LoftGolfOverlayUI
                     questionLabel.Text = "Check the switch on the wall and turn on.\nAfter you have done this and Uneekor Launcher has refreshed, is the issue resolved?";
                     break;
                 case "NN":
-                    questionLabel.Text = "We will perform a full sim restart. After this is performed, is the issue resolved?";
+                    questionLabel.Text = "We will perform a full sim restart. Please do not move the mouse or click anything while it works. After this is performed, is the issue resolved?";
+                    Program.runAHKScript(fullSimRestart);
                     break;
                 case "NNN":
                     rebootSystem();
@@ -214,10 +180,12 @@ namespace LoftGolfOverlayUI
                     special = true;
                     break;
                 case "YNN":
-                    questionLabel.Text = "We are logging into the view session. After this is accomplished, is the issue resolved?";
+                    questionLabel.Text = "We are logging into the view session. Please do not move the mouse or click anything while it works. After this is accomplished, is the issue resolved?";
+                    Program.runAHKScript(logInView);
                     break;
                 case "YNY":
-                    questionLabel.Text = "We will perform a full sim restart. After this is performed, is the issue resolved?";
+                    questionLabel.Text = "We will perform a full sim restart. Please do not move the mouse or click anything while it works. After this is performed, is the issue resolved?";
+                    Program.runAHKScript(fullSimRestart);
                     break;
                 case "YNYN":
                     rebootSystem();
@@ -226,12 +194,14 @@ namespace LoftGolfOverlayUI
                     questionLabel.Text = "Refreshing in Uneekor Launcher. After this is accomplished, is the issue resolved?";
                     special = true;
                     stage = "NN";
+                    Program.runAHKScript(logInView);
                     break;
                 case "YNNY":
                     questionLabel.Text = "Adding session in View. After this is accomplished, is the issue resolved?";
                     break;
                 case "YNNNN":
-                    questionLabel.Text = "We will perform a full sim restart. After this is performed, is the issue resolved?";
+                    questionLabel.Text = "We will perform a full sim restart. Please do not move the mouse or click anything while it works. After this is performed, is the issue resolved?";
+                    Program.runAHKScript(fullSimRestart);
                     break;
                 case "YNNYN":
                     questionLabel.Text = "Refreshing in Uneekor Launcher. After this is accomplished, is the issue resolved?";
@@ -242,7 +212,8 @@ namespace LoftGolfOverlayUI
                     rebootSystem();
                     break;
                 case "YNNYNN":
-                    questionLabel.Text = "We will perform a full sim restart. After this is performed, is the issue resolved?";
+                    questionLabel.Text = "We will perform a full sim restart. Please do not move the mouse or click anything while it works. After this is performed, is the issue resolved?";
+                    Program.runAHKScript(fullSimRestart);
                     break;
                 case "YNNYNNN":
                     rebootSystem();

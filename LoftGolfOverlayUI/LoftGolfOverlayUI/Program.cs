@@ -14,7 +14,7 @@ namespace LoftGolfOverlayUI
         private static Form currentForm;
         private static string automationFilesCSVPath = @"C:\LOFT\LoftGolf_UIAutomation.csv"; //Change this if the CSV's file path changes
         public static Dictionary<string, string> scriptFileDict = new Dictionary<string, string>();
-        private static string ahkexe = @"C:\Program Files\AutoHotkey\v2\AutoHotkey64_UIA.exe"; //This path is whereever the file used to run AHK script is
+        private static string ahkexe; //This path is whereever the file used to run AHK scripts is
         private static Process? ahkProcess;
 
         [STAThread]
@@ -24,8 +24,8 @@ namespace LoftGolfOverlayUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             // Form2.activity currActivity = Form2.activity.golf;
-            currentForm = new HomeScreen();
             DictInit();
+            currentForm = new HomeScreen();
             ahkProcess = null;
             Application.Run(currentForm);
             /* 
@@ -82,6 +82,8 @@ namespace LoftGolfOverlayUI
                 {
                     scriptFileDict.Add(record.Script, record.FilePath);
                 }
+
+                ahkexe = scriptFileDict["AHK EXE"];
             }
             catch
             {

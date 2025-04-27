@@ -1,0 +1,7 @@
+C:\LOFT\Overlay\LoftGolfOverlayUI.pdb
+C:\LOFT\Overlay\D3DCompiler_47_cor3.dll
+C:\LOFT\Overlay\PenImc_cor3.dll
+C:\LOFT\Overlay\PresentationNative_cor3.dll
+C:\LOFT\Overlay\vcruntime140_cor3.dll
+C:\LOFT\Overlay\wpfgfx_cor3.dll
+C:\LOFT\Overlay\LoftGolfOverlayUI.exe

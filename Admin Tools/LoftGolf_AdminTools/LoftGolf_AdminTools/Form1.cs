@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 using CsvHelper;
 
 namespace LoftGolf_AdminTools
@@ -16,12 +17,18 @@ namespace LoftGolf_AdminTools
         {
             InitializeComponent();
             this.Load += DictInit;
+            this.Load += joinListBoxes;
         }
 
         private class DictEntry
         {
             public required string Script { get; set; }
             public required string FilePath { get; set; }
+        }
+
+        private void joinListBoxes(object sender, EventArgs e)
+        {
+            this.pairedListBoxes = new SyncListBoxes(this.ScriptNameListBox, this.FilePathListBox);
         }
 
         private void DictInit(object sender, EventArgs e)
@@ -228,6 +235,16 @@ namespace LoftGolf_AdminTools
                 ErrorTextLabel.Visible = true;
             }
 
+        }
+
+        private void ScriptNameListBox_OnVerticalScroll(object sender, ScrollEventArgs e)
+        {
+            FilePathListBox.TopIndex = ScriptNameListBox.TopIndex;
+        }
+
+        private void FilePathListBox_OnVerticalScroll(object sender, ScrollEventArgs e)
+        {
+            ScriptNameListBox.TopIndex = FilePathListBox.TopIndex;
         }
     }
 }

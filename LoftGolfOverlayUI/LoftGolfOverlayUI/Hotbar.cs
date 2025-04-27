@@ -5,8 +5,9 @@ namespace LoftGolfOverlayUI
         private System.Windows.Forms.Timer timer;
         private HomeScreen.activity currActivity;
         private bool helpShown = false;
-        string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_outline.png");
-
+        // string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_outline.png");
+        private Dictionary<string, string> scriptFileDict;
+        private string button_hover;
         private KaraokeBG karaokeBGImg;
         private MovieBG movieBGImg;
         private MeetingBG meetingBGImg;
@@ -15,7 +16,8 @@ namespace LoftGolfOverlayUI
         {
             InitializeComponent();
             currActivity = newActivity;
-
+            scriptFileDict = Program.retrieveDict();
+            button_hover = scriptFileDict["Nav Buttons Hover"];
             if (currActivity == HomeScreen.activity.karaoke)
             {
                 karaokeBGImg = new KaraokeBG();
@@ -86,7 +88,7 @@ namespace LoftGolfOverlayUI
 
         private void golf_hover(object sender, EventArgs e)
         {
-            label8.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            label8.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             label8.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -96,7 +98,7 @@ namespace LoftGolfOverlayUI
         }
         private void home_hover(object sender, EventArgs e)
         {
-            label7.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            label7.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             label7.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -106,7 +108,7 @@ namespace LoftGolfOverlayUI
         }
         private void karaoke_hover(object sender, EventArgs e)
         {
-            label9.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            label9.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             label9.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -116,7 +118,7 @@ namespace LoftGolfOverlayUI
         }
         private void movie_hover(object sender, EventArgs e)
         {
-            label10.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            label10.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             label10.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -126,7 +128,7 @@ namespace LoftGolfOverlayUI
         }
         private void meeting_hover(object sender, EventArgs e)
         {
-            label11.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            label11.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             label11.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -137,7 +139,7 @@ namespace LoftGolfOverlayUI
 
         private void system_hover(object sender, EventArgs e)
         {
-            label12.BackgroundImage = Image.FromFile(hoverImg);
+            label12.BackgroundImage = Image.FromFile(button_hover);
             label12.BackgroundImageLayout = ImageLayout.Stretch;
         }
 

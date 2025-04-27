@@ -56,3 +56,9 @@ C:\Users\Loft\Documents\GitHub\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftG
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.pdb
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\LoftGolf_AdminTools.genruntimeconfig.cache
 C:\Users\Loft\Documents\GitHub\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\obj\Debug\net8.0-windows\ref\LoftGolf_AdminTools.dll
+C:\LOFT\Admin Tool\Debug\net8.0-windows\LoftGolf_AdminTools.exe
+C:\LOFT\Admin Tool\Debug\net8.0-windows\LoftGolf_AdminTools.dll.config
+C:\LOFT\Admin Tool\Debug\net8.0-windows\LoftGolf_AdminTools.deps.json
+C:\LOFT\Admin Tool\Debug\net8.0-windows\LoftGolf_AdminTools.runtimeconfig.json
+C:\LOFT\Admin Tool\Debug\net8.0-windows\LoftGolf_AdminTools.dll
+C:\LOFT\Admin Tool\Debug\net8.0-windows\LoftGolf_AdminTools.pdb

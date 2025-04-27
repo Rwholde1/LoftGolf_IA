@@ -17,9 +17,11 @@ namespace LoftGolfOverlayUI
         KaraokeBG? karaokeBG;
         MovieBG? movieBG;
         MeetingBG? meetingBG;
+        private Dictionary<string, string> scriptFileDict;
         public Caution(HomeScreen.activity newActivity, HomeScreen.activity prevActivity)
         {
             InitializeComponent();
+            scriptFileDict = Program.retrieveDict();
             this.Location = new System.Drawing.Point(750, 450);
             nextActivity = newActivity;
             this.prevActivity = prevActivity;
@@ -28,6 +30,7 @@ namespace LoftGolfOverlayUI
         public Caution(HomeScreen.activity newActivity, HomeScreen.activity prevActivity, KaraokeBG karaokeBG)
         {
             InitializeComponent();
+            scriptFileDict = Program.retrieveDict();
             this.Location = new System.Drawing.Point(750, 450);
             nextActivity = newActivity;
             this.prevActivity = prevActivity;
@@ -37,6 +40,7 @@ namespace LoftGolfOverlayUI
         public Caution(HomeScreen.activity newActivity, HomeScreen.activity prevActivity, MovieBG movieBG)
         {
             InitializeComponent();
+            scriptFileDict = Program.retrieveDict();
             this.Location = new System.Drawing.Point(750, 450);
             nextActivity = newActivity;
             this.prevActivity = prevActivity;
@@ -46,6 +50,7 @@ namespace LoftGolfOverlayUI
         public Caution(HomeScreen.activity newActivity, HomeScreen.activity prevActivity, MeetingBG meetingBG)
         {
             InitializeComponent();
+            scriptFileDict = Program.retrieveDict();
             this.Location = new System.Drawing.Point(750, 450);
             nextActivity = newActivity;
             this.prevActivity = prevActivity;
@@ -84,6 +89,12 @@ namespace LoftGolfOverlayUI
             }else if(this.meetingBG != null)
             {
                 meetingBG.Close();
+            }
+
+            if (prevActivity == HomeScreen.activity.golf) 
+            {
+                string launchCloseGSPrograms = scriptFileDict["Close GSPrograms"];
+                Program.runAHKScript(launchCloseGSPrograms);
             }
 
             switch (nextActivity)

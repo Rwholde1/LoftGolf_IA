@@ -13,7 +13,9 @@ namespace LoftGolfOverlayUI
 {
     public partial class HomeScreen : Form
     {
-        string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
+        // string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
+        private Dictionary<string, string> scriptFileDict;
+        private string button_hover;
         public enum activity
         {
             home, golf, karaoke, movie, meeting
@@ -23,6 +25,8 @@ namespace LoftGolfOverlayUI
         public HomeScreen()
         {
             InitializeComponent();
+            scriptFileDict = Program.retrieveDict();
+            button_hover = scriptFileDict["Home Buttons Hover"];
             this.Location = new System.Drawing.Point(0, 0);
             currActivity = 0;
         }
@@ -30,7 +34,7 @@ namespace LoftGolfOverlayUI
         private void button1_MouseEnter(object sender, EventArgs e)
         {
 
-            button1.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            button1.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             button1.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -41,7 +45,7 @@ namespace LoftGolfOverlayUI
 
         private void button2_MouseEnter(object sender, EventArgs e)
         {
-            button2.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            button2.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             button2.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -52,7 +56,7 @@ namespace LoftGolfOverlayUI
 
         private void button3_MouseEnter(object sender, EventArgs e)
         {
-            button3.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            button3.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             button3.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -63,7 +67,7 @@ namespace LoftGolfOverlayUI
 
         private void button4_MouseEnter(object sender, EventArgs e)
         {
-            button4.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            button4.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             button4.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 

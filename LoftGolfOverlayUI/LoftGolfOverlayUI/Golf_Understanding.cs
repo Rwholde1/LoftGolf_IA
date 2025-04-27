@@ -13,18 +13,22 @@ namespace LoftGolfOverlayUI
 {
     public partial class Golf_Understanding : Form
     {
-        string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
+        //string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
+        private Dictionary<string, string> scriptFileDict;
+        private string button_hover;
         private HomeScreen.activity currActivity;
         private Golf_New_Returning_User.userType user;
         public Golf_Understanding(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
+            scriptFileDict = Program.retrieveDict();
+            button_hover = scriptFileDict["Home Buttons Hover"];
             this.Location = new System.Drawing.Point(0, 0);
         }
         private void golfBtn_MouseEnter(object sender, EventArgs e)
         {
-            golfBtn.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            golfBtn.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             golfBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -35,7 +39,7 @@ namespace LoftGolfOverlayUI
 
         private void videoAgainBtn_MouseEnter(object sender, EventArgs e)
         {
-            videoAgainBtn.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            videoAgainBtn.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             videoAgainBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 

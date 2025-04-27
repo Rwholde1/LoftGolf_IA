@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LoftGolf_AdminTools</id>
+    <version>1.0.0</version>
+    <authors>LoftGolf_AdminTools</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="d50f4c6fdbb8045277a9ba2dc804044fded789b3" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="CsvHelper" version="33.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Loft\Documents\GitHub\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.runtimeconfig.json" target="lib\net8.0-windows7.0\LoftGolf_AdminTools.runtimeconfig.json" />
+    <file src="C:\Users\Loft\Documents\GitHub\LoftGolf_IA\Admin Tools\LoftGolf_AdminTools\LoftGolf_AdminTools\bin\Debug\net8.0-windows\LoftGolf_AdminTools.dll" target="lib\net8.0-windows7.0\LoftGolf_AdminTools.dll" />
+  </files>
+</package>

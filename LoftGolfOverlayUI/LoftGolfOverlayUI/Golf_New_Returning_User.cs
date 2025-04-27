@@ -12,23 +12,26 @@ namespace LoftGolfOverlayUI
 {
     public partial class Golf_New_Returning_User : Form
     {
-        string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
+        //string hoverImg = Path.Combine(Application.StartupPath, "Images", "btn_glow.png");
         public enum userType
         {
             newUser, returningUser
         }
         public userType user;
         private HomeScreen.activity currActivity;
-
+        private Dictionary<string, string> scriptFileDict;
+        private string button_hover;
         public Golf_New_Returning_User(HomeScreen.activity newActivity)
         {
             InitializeComponent();
             currActivity = newActivity;
+            scriptFileDict = Program.retrieveDict();
+            button_hover = scriptFileDict["Home Buttons Hover"];
             this.Location = new System.Drawing.Point(0, 0);
         }
         private void newUserBtn_MouseEnter(object sender, EventArgs e)
         {
-            newUserBtn.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            newUserBtn.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             newUserBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 
@@ -39,7 +42,7 @@ namespace LoftGolfOverlayUI
 
         private void returningUserBtn_MouseEnter(object sender, EventArgs e)
         {
-            returningUserBtn.BackgroundImage = Image.FromFile(hoverImg); // Make sure to add your image to Resources
+            returningUserBtn.BackgroundImage = Image.FromFile(button_hover); // Make sure to add your image to Resources
             returningUserBtn.BackgroundImageLayout = ImageLayout.Stretch; // Optional: Set how the image should fit
         }
 

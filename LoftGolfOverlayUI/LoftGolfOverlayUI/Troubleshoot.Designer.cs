@@ -56,7 +56,7 @@
             label2.Name = "label2";
             label2.Size = new Size(491, 181);
             label2.TabIndex = 1;
-            label2.Text = "Hello there! If you are accessing the help page, we assume you are running into trouble with your shot being detected. Please answer the questions below, and we will try our best to fix your issue!\r\n";
+            label2.Text = "Hello there! This is the golf troubleshooting page. Please answer the questions below, and we will try our best to fix your issue!\r\n";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
@@ -106,7 +106,7 @@
             noButton.UseVisualStyleBackColor = true;
             noButton.Click += button3_Click;
             // 
-            // Form6
+            // Troubleshoot
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -121,7 +121,7 @@
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
-            Name = "Form6";
+            Name = "Troubleshoot";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += Form6_Load;

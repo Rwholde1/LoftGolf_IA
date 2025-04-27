@@ -13,9 +13,11 @@ namespace LoftGolfOverlayUI
     public partial class LeaveCurrent : Form
     {
         HomeScreen.activity currActivity;
+        private Dictionary<string, string> scriptFileDict;
         public LeaveCurrent(HomeScreen.activity newActivity)
         {
             InitializeComponent();
+            scriptFileDict = Program.retrieveDict();
             currActivity = newActivity;
         }
 
@@ -28,6 +30,8 @@ namespace LoftGolfOverlayUI
                     this.Hide();
                     break;
                 case HomeScreen.activity.golf:
+                    string launchCloseGSPrograms = scriptFileDict["Close GSPrograms"];
+                    Program.runAHKScript(launchCloseGSPrograms);
                     // run autohotkey stuff for golf
                     Program.changeForm(new Golf_New_Returning_User(currActivity));
                     this.Hide();

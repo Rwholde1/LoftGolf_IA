@@ -1,0 +1,8 @@
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\LoftGolf_AdminTools.pdb
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\LoftGolf_AdminTools.dll.config
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\D3DCompiler_47_cor3.dll
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\PenImc_cor3.dll
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\PresentationNative_cor3.dll
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\vcruntime140_cor3.dll
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\wpfgfx_cor3.dll
+C:\LOFT\Admin Tool\Release\net8.0-windows\publish\win-x64\LoftGolf_AdminTools.exe
